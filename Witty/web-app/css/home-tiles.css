@@ -1,0 +1,134 @@
+.tiles {
+    width: 990px;
+    margin-left: -5px;
+}
+
+.tile-row {
+    margin-top: -5px;
+    float: left;
+    border: none;
+    width: 330px;
+}
+
+.tile-row-half {
+    margin-top: -5px;
+    float: left;
+    border: none;
+    width: 165px;
+}
+
+.small_tile_container {
+    width: 165px;
+    height: 110px;
+    float: left;
+}
+
+.small_tile {
+    background: #dedede;
+    width: 155px;
+    height: 100px;
+    border: none;
+    margin: 5px;
+    float: left;
+}
+
+.small_tile .tile_title {
+    margin-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    width: 145px;
+    height: 25px;
+    color: #ffffff;
+    background: url('../images/transparent_black.png');
+    font-size: 9pt;
+    font-weight: bold;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.small_tile .tile_link {
+    display: block;
+    width: 155px;
+    height: 100px;
+    margin-top: -100px;
+}
+
+.large_tile_container {
+    width: 330px;
+    height: 330px;
+    float: left;
+}
+
+.large_tile {
+    background: #dedede;
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+    float: left;
+}
+
+.large_tile .tile_title {
+    margin-top: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    width: 310px;
+    height: 40px;
+    color: #ffffff;
+    background: url('../images/transparent_black.png');
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.large_tile .tile_link {
+    display: block;
+    width: 320px;
+    height: 320px;
+    margin-top: -320px;
+}
+
+.small_1x2 {
+    width: 155px;
+    height: 210px;
+    background: #efefef;
+    border: none;
+    margin: 5px;
+    float: left;
+
+}
+
+.build-it-up {
+    border: solid 1px #424242;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: url('../images/build-it-up-bg.png');
+    width: 135px;
+    height: 190px;
+    padding: 10px;
+}
+
+.build-it-up-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    height: 40px;
+}
+
+.build-it-up-text {
+    height: 115px;
+    text-align: left;
+}
+
+.build-it-up-button {
+    height: 30px;
+}
+
+.build-it-up-button a {
+    margin: 0 !important;
+    width: 113px;
+}

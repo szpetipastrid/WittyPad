@@ -1,0 +1,45 @@
+<default-beans>
+    <bean id="Community">
+        <wclass clazzId='clazz_Community' lang='en'>
+            <wproperty id='prop_name' type='name' readonly='true' required=''>
+                <name lang='hu'>név</name>
+                <name lang='en'>name</name>
+            </wproperty>
+            <wproperty id='prop_uri' type='text' readonly='true' required='true' i18n='false'>
+                <name lang='hu'>uri</name>
+                <name lang='en'>uri</name>
+            </wproperty>
+            <wproperty id='prop_description' type='text' readonly='' required='true'>
+                <name lang='hu'>leírás</name>
+                <name lang='en'>description</name>
+            </wproperty>
+        </wclass>
+    </bean>
+    <bean id="WittyCommunity">
+        <winstance wclass='clazz_Community' lang='hu' template="community">
+            <wproperty id='prop_name'>
+                <value lang='hu'>Witty közösség</value>
+                <value lang='en'>Witty community</value>
+            </wproperty>
+            <wproperty id='prop_uri'>
+                <value lang='all'>witty</value>
+            </wproperty>
+            <wproperty id='prop_description'>
+                <value lang='hu'>A Witty építők lelkes közössége</value>
+                <value lang='en'>Community of the Witty builders</value>
+            </wproperty>
+            <wproperty id='html_css'>
+                <value lang="all">http://dl.dropbox.com/u/13371372/witty/witty/witty.css</value>
+            </wproperty>
+            <wproperty id="image_small">
+                <value lang="all">http://dl.dropbox.com/u/13371372/witty/witty/witty-tile-small.png</value>
+            </wproperty>
+            <wproperty id="image_large">
+                <value lang="all">http://dl.dropbox.com/u/13371372/witty/witty/witty-tile-large.png</value>
+            </wproperty>
+        </winstance>
+    </bean>
+
+
+
+</default-beans>

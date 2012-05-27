@@ -1,0 +1,12 @@
+input, textarea, button, form, div, td, ul, li, p, a {
+	text-align: justify;
+}
+
+img, a, *:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+

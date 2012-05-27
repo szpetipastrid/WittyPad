@@ -1,0 +1,5 @@
+/* Common CSS to desktop layout */
+@import "main.css";
+
+/* CSS to home page */
+@import "home.css";

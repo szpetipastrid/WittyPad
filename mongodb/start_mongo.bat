@@ -1,0 +1,3 @@
+@echo off
+echo Starting mondodb client...
+mongo localhost:27017/witty-dev

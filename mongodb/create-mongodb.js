@@ -1,0 +1,1 @@
+db.addUser('wittyuser', 'helloworld');

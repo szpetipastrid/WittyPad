@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Witty/Witty.iml" filepath="$PROJECT_DIR$/Witty/Witty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Witty/Witty-grailsPlugins.iml" filepath="$PROJECT_DIR$/Witty/Witty-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WittyCommunity/WittyCommunity.iml" filepath="$PROJECT_DIR$/WittyCommunity/WittyCommunity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WittyCommunity/WittyCommunity-grailsPlugins.iml" filepath="$PROJECT_DIR$/WittyCommunity/WittyCommunity-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WittyCore/WittyCore.iml" filepath="$PROJECT_DIR$/WittyCore/WittyCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WittyCore/WittyCore-grailsPlugins.iml" filepath="$PROJECT_DIR$/WittyCore/WittyCore-grailsPlugins.iml" />
+    </modules>
+  </component>
+</project>
+

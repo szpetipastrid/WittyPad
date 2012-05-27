@@ -1,0 +1,22 @@
+<plugin name='witty-core' version='0.3.3' grailsVersion='1.3 &gt; *'>
+  <author>Peter Szilagyi</author>
+  <authorEmail>szpetip@gmail.com</authorEmail>
+  <title>Witty Core Plugin</title>
+  <description>
+Witty Core features that required by other plugins.
+</description>
+  <documentation>http://grails.org/plugin/witty-core</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>hu.kovex.witty.plugin.core.ShortenerTagLib</resource>
+    <resource>hu.kovex.witty.plugin.core.jquery.ExtendedJQueryTagLib</resource>
+    <resource>hu.kovex.witty.plugin.core.jquery.GoogleAnalyticsTagLib</resource>
+  </resources>
+  <dependencies>
+    <plugin name='mongodb' version='1.0.0.RC4' />
+  </dependencies>
+  <behavior />
+</plugin>

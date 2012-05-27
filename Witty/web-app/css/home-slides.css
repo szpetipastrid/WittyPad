@@ -1,0 +1,86 @@
+#slideshow_bg {
+    background: #ffffff;
+
+}
+
+.handwrite {
+    font-family: 'Just Me Again Down Here', cursive;
+}
+
+.slide_note {
+    background: #FFFFFF;
+    width: 264px;
+    height: 264px;
+    top: 0;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+}
+
+.slide_note_title {
+    font-family: 'Just Me Again Down Here', cursive;
+    text-shadow: none;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 10px;
+
+}
+
+.slide_note_text {
+    padding-left: 10px;
+    padding-right: 20px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 18px;
+    text-shadow: none;
+
+}
+
+.slide_note_button {
+    left: 406px;
+    top: 413px;
+    width: 198px;
+    height: 40px;
+
+}
+
+
+.slide1_iphone {
+    left: 5px;
+    top: 255px;
+}
+
+.slide1_macbook {
+    left: 65px;
+    top: -105px;
+    easingin: easeOutBack;
+}
+
+.slide1_coffee {
+    left: 680px;
+    top: 230px;
+}
+
+.slide1_tag {
+    left: 800px;
+    top: -75px;
+}
+
+.slide1_note {
+    background: url('../images/slides/slide1_note.png') no-repeat;
+    left: 720px;
+}
+
+.slide1_note_title {
+    background: transparent;
+}
+
+.slide1_note_text {
+    background: transparent;
+}
+
+.slide1_note_button {
+
+}

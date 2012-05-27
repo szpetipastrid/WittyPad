@@ -1,0 +1,63 @@
+.home_paragraph {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    background: #dfdfdf;
+    border: solid 1px #cfcfcf;
+    width: 483px;
+    height: 110px;
+}
+
+.home_paragraph_left {
+    margin-right: 5px;
+}
+
+.home_paragraph_right {
+    margin-left: 5px;
+}
+
+.home_paragraph_title {
+    margin-left: 106px;
+    font-family: 'Just Me Again Down Here', cursive;
+    text-shadow: none;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.home_paragraph_image {
+    float: left;
+    width: 96px;
+    height: 76px;
+    margin-right: 10px;
+}
+
+.home_paragraph_image_witty_user {
+    background: url('../images/home/witty-for-user.png') no-repeat 11px 0px;
+}
+
+.home_paragraph_image_witty_developer {
+    background: url('../images/home/witty-for-developer.png') no-repeat 11px 0px;
+}
+
+.home_paragraph_image_witty_platforms {
+    background: url('../images/home/witty-platforms.png') no-repeat 11px 0px;
+}
+
+.home_paragraph_image_witty_faq {
+    background: url('../images/home/witty-faq.png') no-repeat 11px 0px;
+}
+
+.home_paragraph_text {
+    font-family: arial;
+    font-size: 11px;
+    float: left;
+    width: 354px;
+}
+
+.home_paragraph_text_left {
+}
+
+.home_paragraph_text_right {
+}
