@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
 .error_tooltip {
     height: 30px;
     float: left;
@@ -8,7 +19,6 @@
     color: red;
 }
 
-
 .smart-wizard-container {
     width: 750px;
     height: 450px;
@@ -17,13 +27,23 @@
     top: 50%;
     margin-left: -375px;
     margin-top: -250px;
-    border: solid 5px #adff2f;
-    -webkit-box-shadow: 0 0 15px #424242;
-    -moz-box-shadow: 0 0 15px #424242;
-    box-shadow: 0 0 15px #424242;
+    -webkit-box-shadow: 15px 15px 15px #424242;
+    -moz-box-shadow: 15px 15px 15px #424242;
+    box-shadow: 15px 15px 15px #424242;
     -moz-border-radius: 10px;
     border-radius: 10px;
     font-size: 12px;
+    background: url('../images/transparent_white.png');
+    padding: 10px;
+    border: none !important;
+}
+
+.smart-wizard-container-inner {
+    width: 750px;
+    height: 450px;
+    background: #ffffff;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .smart-wizard-content {

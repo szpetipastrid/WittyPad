@@ -1,4 +1,16 @@
-@import "smart-wizard.css";
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
+@import "witty-community-layout.css";
+
 body {
     font-family: Arial;
     margin: 0;
@@ -7,7 +19,6 @@ body {
     width: 100%;
 
 }
-
 
 h1.top_banner_title {
     margin-top: 0px;
@@ -28,11 +39,10 @@ p.subtitle {
     font-style: italic;
 }
 
-
 .top_logo {
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
     background: url('../images/transparent_white.png');
     padding: 10px;

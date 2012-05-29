@@ -1,0 +1,99 @@
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
+.community-content {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    width: 800px;
+    margin-left: -400px;
+    background: url('../images/transparent_white.png');
+    padding: 10px;
+    -webkit-box-shadow: 15px 15px 15px #424242;
+    -moz-box-shadow: 15px 15px 15px #424242;
+    box-shadow: 15px 15px 15px #424242;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.community-content-inner {
+    width: 760px;
+    padding: 20px;
+    background: #ffffff;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.community-content h1 {
+    background: url('../images/wizard-property-bullet.png') no-repeat 0 6px;
+    padding-left: 35px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 29px;
+    color: #2C85D6;
+    border-bottom: solid 1px #2C85D6;
+    width: 500px;
+}
+
+.wizard-form {
+    margin-top: 30px;
+    clear: both;
+}
+
+.form-element {
+    clear: both;
+}
+
+.wizard-form label.ltitle {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.wizard-form input.form-input {
+    padding: 3px;
+    float: left;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    background: #E2F1FE;
+    border: 1px solid #adff2f;
+    /*margin-bottom: 20px;*/
+}
+
+.wizard-form .postfix {
+    font-size: 16px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.error_tooltip {
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.error_tooltip a {
+    color: red;
+}
+
+.showMoreLink {
+    color: #2C85D6;
+    text-decoration: none;
+    border-bottom: dotted 1px #2C85D6;
+
+}

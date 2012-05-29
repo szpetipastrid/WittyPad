@@ -16,7 +16,7 @@
   </head>
   <body>
 <script type="text/javascript">
-    var secondRemaining = 100;
+    var secondRemaining = 10;
 
     function countingBack() {
         var preString = "${message(code:'welcome.open.text.prefix')}";
