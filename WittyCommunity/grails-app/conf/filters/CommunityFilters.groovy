@@ -27,8 +27,8 @@ class CommunityFilters {
                 def domainIndex = domainName.indexOf(CH.config.grails.serverName as String)
                 def subDomain = null
                 def layout = null
-                assert domainIndex >= 0
-                if (domainIndex) {
+//                assert domainIndex >= 0
+                if (domainIndex > 0) {
                     def subDomainCandidate = domainName.substring(0, domainIndex - 1).toLowerCase()
 
                     if (layouts.contains(subDomainCandidate)) {

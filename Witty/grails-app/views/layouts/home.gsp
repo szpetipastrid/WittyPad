@@ -1,7 +1,9 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
     <title><g:layoutTitle default="Witty"/></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link type="text/css" rel="stylesheet"
           href="${resource(dir: "jquery-ui/themes/base/", file: "jquery.ui.all.css")}"/>
     <jqe:jQueryResources/>
@@ -202,7 +204,7 @@
         <div style="clear: both;width:980px;height: 0"></div>
 
         <div class="footer">
-            wittypad | &copy; 2012 <g:message code="kovex.name"/><br>
+            wittypad | <g:message code="author.name"/> <g:message code="author.address"/><br>
             <g:message code="home.footer.licence"/><br>
 
             <a href="https://twitter.com/#!/wittypad" class="tile_link" target="_blank"><g:message
@@ -212,10 +214,10 @@
             <a href="https://github.com/szpetip/WittyPad/issues" class="tile_link" target="_blank"><g:message
                     code="home.footer.open.issues"/></a>  |
             <a href="${comm.link(community: 'witty')}"><g:message code="home.footer.open.witty.community"/></a><br>
-            <g:link controller="home" params="[lang:'en_US']">wittyPad USA</g:link>  |
-            <g:link controller="home" params="[lang:'en_GB']">wittyPad Great Britain</g:link>  |
-            <g:link controller="home" params="[lang:'hu_HU']">wittyPad Hungary</g:link>  |
-            <g:link controller="home" params="[lang:'de_DE']">wittyPad Germany</g:link>
+            <g:link controller="home" params="[lang:'en_US']">wittypad usa</g:link>  |
+            <g:link controller="home" params="[lang:'en_GB']">wittypad gb</g:link>  |
+            <g:link controller="home" params="[lang:'hu_HU']">wittypad hungary</g:link>  |
+            <g:link controller="home" params="[lang:'de_DE']">wittypad germany</g:link>
 
         </div>
 
