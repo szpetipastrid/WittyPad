@@ -9,11 +9,11 @@
  * Witty and WittyPad are the name of the software, please do not use it to other purposes.
  */
 
-/* Text information */
-@import "home-textinfo.css";
-    /* Tiles CSS */
-@import "home-tiles.css";
-    /* Layer slide common css */
-@import "home-layerslider.css";
-    /* Slide css definitions */
-@import "home-slides.css";
+package hu.kovex.witty.app.common
+
+class ContentController {
+
+    def index = { }
+
+    def faq = { }
+}
