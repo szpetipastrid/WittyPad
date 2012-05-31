@@ -2,8 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><g:layoutTitle default="Witty"/></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>%{--
+  - Copyright (c) 2012. Witty Project.
+  - Peter Szilagyi
+  - szpetip@gmail.com
+  -
+  - Witty is a a knowledge-management, open source community portal.
+  - Witty is available under the http://wittypad.com.
+  - Witty is a free software distributed under the GNU General Public Licence.
+  - Witty and WittyPad are the name of the software, please do not use it to other purposes.
+  --}%
+
+<g:layoutTitle default="Witty"/></title>
     <link type="text/css" rel="stylesheet"
           href="${resource(dir: "jquery-ui/themes/base/", file: "jquery.ui.all.css")}"/>
     <jqe:jQueryResources/>
@@ -115,45 +125,65 @@
 
         <div id="layerslider">
 
+            <!-- Slide 1 -->
             <div class="ls-layer" rel="slidedelay: 3000">
+                <img class="ls-bg" src="${resource(dir: '/images/home/slides', file: 'slide1_bg.jpg')}" alt="layer">
 
-                <img class="ls-bg" src="${resource(dir: '/images/slides', file: 'slide1_bg.png')}" alt="layer">
-                <img class="ls-s1 slide1_macbook" src="${resource(dir: '/images/slides', file: 'slide1_macbook.png')}"
-                     alt="sublayer"
-                     rel="slidedirection: bottom">
-                <img class="ls-s2 slide1_iphone" src="${resource(dir: '/images/slides', file: 'slide1_iphone.png')}"
-                     alt="sublayer"
-                     rel="slidedirection: right">
+                <img class="ls-s1" style="left: 20px;top:15px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide1_image.png')}" alt="sublayer"
+                     rel="slidedirection: bottom; slideoutdirection: left;">
+
+                <div class="ls-s1 slide-title"><g:message code="home.slides.slide1.title"/></div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="ls-layer" rel="slidedelay: 3000">
+                <img class="ls-bg" src="${resource(dir: '/images/home/slides', file: 'slide2_bg.jpg')}" alt="layer">
+
+                <img class="ls-s1" style="left: 20px;top:0px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide2_image.png')}" alt="sublayer"
+                     rel="slidedirection: bottom; slideoutdirection: left;">
+
+                <div class="ls-s1 slide-title"><g:message code="home.slides.slide2.title"/></div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="ls-layer" rel="slidedelay: 3000">
+                <img class="ls-bg" src="${resource(dir: '/images/home/slides', file: 'slide3_bg.jpg')}" alt="layer">
+
+                <img class="ls-s1" style="left: 20px;top:15px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide3_image.png')}" alt="sublayer"
+                     rel="slidedirection: bottom; slideoutdirection: left;">
+
+                <div class="ls-s1 slide-title"><g:message code="home.slides.slide3.title"/></div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="ls-layer" rel="slidedelay: 3000">
+                <img class="ls-bg" src="${resource(dir: '/images/home/slides', file: 'slide4_bg.jpg')}" alt="layer">
+
+                <img class="ls-s1" style="left: 0px;top:0px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide4_image1.png')}" alt="sublayer"
+                     rel="delayin: 1400;slidedirection: left; slideoutdirection: left;">
+                <img class="ls-s1" style="left: 0px;top:0px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide4_image2.png')}" alt="sublayer"
+                     rel="delayin: 700;slidedirection: left; slideoutdirection: left;">
+                <img class="ls-s1" style="left: 0px;top:0px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide4_image3.png')}" alt="sublayer"
+                     rel="delayin: 100;slidedirection: left; slideoutdirection: left;">
 
 
-                <div class="ls-s5 slide_note_button slide1_note_button"
-                     rel="delayin: 1300; slidedirection: top; slideoutdirection: top;">
-                    <a href="${comm.link(community: 'witty')}" class="title_button ">
-                        <g:message code="home.slides.slide1.button.explore"/>
-                    </a>
+                <img class="ls-s1" style="left: 530px;top:120px"
+                     src="${resource(dir: '/images/home/slides', file: 'slide4_logo.png')}"
+                     alt="sublayer" rel="slidedirection: top; slideoutdirection: top;">
+
+                <div class="ls-s1"
+                     style="width:445px;left: 530px;top:200px;font-family: 'Just Me Again Down Here', cursive;font-size: 55px;line-height: 55px;">
+                    <g:message code="home.slides.slide4.title"/>
                 </div>
-
-                <div class="ls-s5 slide_note slide1_note"
-                     rel="delayin: 700; slidedirection: top; slideoutdirection: top;">
-                    <div class="slide_note_title slide1_note_title">
-                        <g:message code="home.slides.slide1.note.title"/>
-                    </div>
-
-                    <div class="slide_note_text slide1_note_text">
-                        <g:message code="home.content.for.users.text"/>
-                    </div>
-                </div>
-                <img class="ls-s5 slide1_coffee" src="${resource(dir: '/images/slides', file: 'slide1_coffee.png')}"
-                     alt="sublayer"
-                     rel="slidedirection: bottom; slideoutdirection: bottom;">
-
-                <p class="ls-s3 handwrite"
-                   style="background: url('${resource(dir: 'images', file: 'transparent_black.png')}');padding: 5px;line-height: 65px; font-size: 65px; color: #ffffff;left: 100px;top:50px;text-shadow: 5px 5px 5px #424242;easingin: easeOutQuad;"
-                   rel="slidedirection: left;">
-                    <g:message code="home.slides.slide1.message"/>
-                </p>
 
             </div>
+
         </div>
 
         <div class="home-content">
