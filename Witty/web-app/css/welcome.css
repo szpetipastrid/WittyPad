@@ -60,33 +60,3 @@
     width: 300px;
     clear: both;
 }
-
-.languageSelector {
-    font-family: Arial;
-    font-size: 10px;
-    padding: 20px;
-    position: absolute;
-    width: 190px;
-    left: 100%;
-    margin-left: -260px;
-    top: 20px;
-    border: solid 1px #2C92DD;
-}
-
-.languageSelector ul {
-    margin-left: 25px;
-    margin-top: 10px;
-    margin-bottom: 0;
-
-    padding: 0;
-}
-
-.languageSelector ul li {
-    list-style: none;
-}
-
-.languageSelector ul li a {
-    font-size: 12px;
-    text-decoration: none;
-    color: #2C92DD;
-}

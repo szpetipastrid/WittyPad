@@ -48,36 +48,6 @@
             <g:message code="welcome.open.info.click.mobile"/>
         </div>
     </div>
-
-    <div class="languageSelector">
-        <div class="languageSelector-title">
-            <a id="openLanguageSelector"><g:message code="welcome.open.change.locale.mobile"/></a>
-        </div>
-        <script type="text/javascript">
-            $(function() {
-                $("#openLanguageSelector").click(function() {
-                    $(".languageSelector-List").fadeIn();
-                })
-            })
-        </script>
-        <div class="languageSelector-list">
-            <div class="languageSelector-list-info">
-            <g:message code="welcome.open.change.locale"/>
-                </div>
-            <a class="locales" href="${createLink(action: 'mobile', params: [lang: "en_US"])}">
-                WittyPad USA
-            </a>
-            <a class="locales" href="${createLink(action: 'mobile', params: [lang: "en_GB"])}">
-                WittyPad UK
-            </a>
-            <a class="locales" href="${createLink(action: 'mobile', params: [lang: "hu_HU"])}">
-                WittyPad Hungary
-            </a>
-            <a class="locales" href="${createLink(action: 'mobile', params: [lang: "de_DE"])}">
-                WittyPad Germany
-            </a>
-        </div>
-    </div>
 </div>
 </body>
 </html>

@@ -9,6 +9,8 @@
   - Witty and WittyPad are the name of the software, please do not use it to other purposes.
   --}%
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -35,11 +37,6 @@
     <script src="${resource(dir: '/modules/slider', file: 'plugins.js')}"></script>
     <script src="${resource(dir: '/modules/slider', file: 'layerslider.kreaturamedia.jquery-min.js')}"></script>
 
-    <!-- Language switcher -->
-    <link href='${resource(dir: 'modules/language-switcher', file: 'languageswitcher.css')}' rel='stylesheet'
-          type='text/css'>
-    <script type="text/javascript"
-            src="${resource(dir: 'modules/language-switcher', file: 'languageswitcher.js')}"></script>
     <analytics:code/>
     <g:layoutHead/>
 </head>
@@ -107,25 +104,7 @@
         </table>
 
         <div id="menu_banner">
-            <div id="country-select">
-                <form action="">
-                    <select id="country-options" name="country-options">
-                        <option ${selectedLang as String == "us" || selectedLang as String == "en_US" ? 'selected' : ''}
-                                title="${createLink(controller: 'home', action: 'desktop', params: [lang: "en_US"])}"
-                                value="us">United States</option>
-                        <option ${selectedLang as String == "gb" || selectedLang as String == "en_GB" ? 'selected' : ''}
-                                title="${createLink(controller: 'home', action: 'desktop', params: [lang: "en_GB"])}"
-                                value="uk">United Kingdom</option>
-                        <option ${selectedLang as String == "hu" || selectedLang as String == "hu_HU" ? 'selected' : ''}
-                                title="${createLink(controller: 'home', action: 'desktop', params: [lang: "hu_HU"])}"
-                                value="hu">Hungary</option>
-                        <option ${selectedLang as String == "de" || selectedLang as String == "de_DE" ? 'selected' : ''}
-                                title="${createLink(controller: 'home', action: 'desktop', params: [lang: "de_DE"])}"
-                                value="de">Germany</option>
-                    </select>
-                    <input value="Select" type="submit"/>
-                </form>
-            </div>
+
         </div>
 
         <div id="layerslider">
@@ -181,11 +160,6 @@
             <a href="https://github.com/szpetip/WittyPad/issues" class="tile_link" target="_blank"><g:message
                     code="home.footer.open.issues"/></a>  |
             <a href="${comm.link(community: 'witty')}"><g:message code="home.footer.open.witty.community"/></a><br>
-            <g:link controller="home" params="[lang:'en_US']">wittyPad USA</g:link>  |
-            <g:link controller="home" params="[lang:'en_GB']">wittyPad Great Britain</g:link>  |
-            <g:link controller="home" params="[lang:'hu_HU']">wittyPad Hungary</g:link>  |
-            <g:link controller="home" params="[lang:'de_DE']">wittyPad Germany</g:link>
-
         </div>
 
         <div style="clear: both;width:980px;height: 1px"></div>

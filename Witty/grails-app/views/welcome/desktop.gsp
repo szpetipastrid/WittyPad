@@ -39,22 +39,5 @@
     </div>
 </div>
 
-<div class="languageSelector">
-    <g:message code="welcome.open.change.locale"/>
-    <ul>
-        <li><a href="${createLink(controller: 'home', action: 'welcome', params: [lang: "en_US"])}">
-            <img src="${resource(dir: "/modules/language-switcher/images/", file: "us_16x16.png")}"/> WittyPad USA</a>
-        </li>
-        <li><a href="${createLink(controller: 'home', action: 'welcome', params: [lang: "en_GB"])}">
-            <img src="${resource(dir: "/modules/language-switcher/images/", file: "uk_16x16.png")}"/> WittyPad UK</a>
-        </li>
-        <li><a href="${createLink(controller: 'home', action: 'welcome', params: [lang: "hu_HU"])}">
-            <img src="${resource(dir: "/modules/language-switcher/images/", file: "hu_16x16.png")}"/> Witty Hungary</a>
-        </li>
-        <li><a href="${createLink(controller: 'home', action: 'welcome', params: [lang: "de_DE"])}">
-            <img src="${resource(dir: "/modules/language-switcher/images/", file: "de_16x16.png")}"/> Witty Germany</a>
-        </li>
-    </ul>
-</div>
 </body>
 </html>
