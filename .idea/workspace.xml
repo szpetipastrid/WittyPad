@@ -4,18 +4,23 @@
     <list id="0e2314b6-8cc5-4013-af56-7313fb033ad8" name="Default" comment="" />
     <list id="a6861463-f51a-46e2-8641-6c24612f61d3" name="WittyPad-9: Witty Wizard" comment="WittyPad-9: Witty Wizard&#10;&#10;Community template added&#10;My name added to the footer" />
     <list default="true" id="8bce46f5-87d7-4139-a841-a0c2c2fe7cb2" name="WittyPad-12: Witty Content" comment="* Language selector removed&#10;* home banner size changed from 980x500 to 980x400&#10;* home banner backgrounds are replaced to a simple image, old banner aren't deleted yet">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide2_image.png" afterPath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide2_image.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide3_image.png" afterPath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide3_image.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/i18n/messages_hu.properties" afterPath="$PROJECT_DIR$/Witty/grails-app/i18n/messages_hu.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide_witty_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Witty/grails-app/views/home/components/_home_layerslider.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Witty/grails-app/views/layouts/page.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Witty/web-app/css/layerslider-common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WittyCore/grails-app/taglib/hu/kovex/witty/plugin/core/ui/LayerSliderTagLib.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WittyCore/test/unit/hu/kovex/witty/plugin/core/ui/LayerSliderTagLibTests.groovy" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Witty/web-app/css/home-slides.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide_bg.jpg" afterPath="$PROJECT_DIR$/Witty/web-app/images/home/slides/slide_bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/i18n/messages.properties" afterPath="$PROJECT_DIR$/Witty/grails-app/i18n/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/views/content/faq.gsp" afterPath="$PROJECT_DIR$/Witty/grails-app/views/content/faq.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/views/home/desktop.gsp" afterPath="$PROJECT_DIR$/Witty/grails-app/views/home/desktop.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/views/layouts/content.gsp" afterPath="$PROJECT_DIR$/Witty/grails-app/views/layouts/content.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/views/layouts/home.gsp" afterPath="$PROJECT_DIR$/Witty/grails-app/views/layouts/home.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/views/welcome/desktop.gsp" afterPath="$PROJECT_DIR$/Witty/grails-app/views/welcome/desktop.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/grails-app/views/welcome/mobile.gsp" afterPath="$PROJECT_DIR$/Witty/grails-app/views/welcome/mobile.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/css/home-layerslider.css" afterPath="$PROJECT_DIR$/Witty/web-app/css/home-layerslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/css/welcome.css" afterPath="$PROJECT_DIR$/Witty/web-app/css/welcome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/css/welcome.iphone.css" afterPath="$PROJECT_DIR$/Witty/web-app/css/welcome.iphone.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/css/home.css" afterPath="$PROJECT_DIR$/Witty/web-app/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Witty/web-app/css/main.css" afterPath="$PROJECT_DIR$/Witty/web-app/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WittyCore/plugin.xml" afterPath="$PROJECT_DIR$/WittyCore/plugin.xml" />
     </list>
     <ignored path="Witty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +83,7 @@
       <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Witty/web-app/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+            <state line="12" column="16" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +92,7 @@
       <file leaf-file-name="home-layerslider.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Witty/web-app/css/home-layerslider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+            <state line="26" column="40" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,16 +119,25 @@
       <file leaf-file-name="messages.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Witty/grails-app/i18n/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="32" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.0">
+            <state line="54" column="0" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desktop.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="desktop.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Witty/grails-app/views/home/desktop.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="62" selection-start="660" selection-end="660" vertical-scroll-proportion="0.5689655">
+            <state line="6" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="-1.9148936">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WittyCore/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.5548961">
               <folding />
             </state>
           </provider>
@@ -141,7 +155,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Witty/web-app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="32" selection-start="2340" selection-end="2340" vertical-scroll-proportion="9.909091">
+            <state line="126" column="32" selection-start="2437" selection-end="2437" vertical-scroll-proportion="9.909091">
               <folding />
             </state>
           </provider>
@@ -150,7 +164,7 @@
       <file leaf-file-name="content.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Witty/grails-app/views/layouts/content.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="23" selection-start="6771" selection-end="6771" vertical-scroll-proportion="-17.958334">
+            <state line="32" column="23" selection-start="833" selection-end="833" vertical-scroll-proportion="-17.958334">
               <folding />
             </state>
           </provider>
@@ -170,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/WittyCore/grails-app/taglib/hu/kovex/witty/plugin/core/ui/LayerSliderTagLib.groovy" />
         <option value="$PROJECT_DIR$/Witty/web-app/css/layerslider.css" />
         <option value="$PROJECT_DIR$/Witty/web-app/css/home-slides.css" />
         <option value="$PROJECT_DIR$/Witty/web-app/css/home-layerslider.css" />
@@ -186,6 +199,7 @@
         <option value="$PROJECT_DIR$/Witty/application.properties" />
         <option value="$PROJECT_DIR$/Witty/grails-app/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/Witty/grails-app/views/home/desktop.gsp" />
+        <option value="$PROJECT_DIR$/WittyCore/plugin.xml" />
       </list>
     </option>
   </component>
@@ -628,21 +642,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Witty/web-app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="32" selection-start="2340" selection-end="2340" vertical-scroll-proportion="9.909091">
+        <state line="126" column="32" selection-start="2437" selection-end="2437" vertical-scroll-proportion="9.909091">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Witty/web-app/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+        <state line="12" column="16" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Witty/web-app/css/home-layerslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+        <state line="26" column="40" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -656,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Witty/grails-app/views/layouts/content.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="23" selection-start="6771" selection-end="6771" vertical-scroll-proportion="-17.958334">
+        <state line="32" column="23" selection-start="833" selection-end="833" vertical-scroll-proportion="-17.958334">
           <folding />
         </state>
       </provider>
@@ -677,14 +691,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Witty/grails-app/i18n/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="32" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.0">
+        <state line="54" column="0" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Witty/grails-app/views/home/desktop.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="660" selection-end="660" vertical-scroll-proportion="0.5689655">
+        <state line="6" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="-1.9148936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WittyCore/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.5548961">
           <folding />
         </state>
       </provider>

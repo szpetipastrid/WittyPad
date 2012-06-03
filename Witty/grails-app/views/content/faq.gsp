@@ -17,9 +17,13 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
-<html>
-  <head><title>Simple GSP page</title></head>
-  <body>
-      <h1>Witty FAQ</h1>
-  </body>
-</html>
+<g:applyLayout name="content">
+    <head>
+        <title><g:message code="witty.content.faq.title"/></title>
+    </head>
+    <content tag="header"><g:message code="witty.content.faq.header"/></content>
+    <content tag="content">
+        Hola!
+    </content>
+
+</g:applyLayout>

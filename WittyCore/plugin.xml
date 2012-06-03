@@ -25,6 +25,7 @@ Witty Core features that required by other plugins.
     <resource>hu.kovex.witty.plugin.core.ShortenerTagLib</resource>
     <resource>hu.kovex.witty.plugin.core.jquery.ExtendedJQueryTagLib</resource>
     <resource>hu.kovex.witty.plugin.core.jquery.GoogleAnalyticsTagLib</resource>
+    <resource>hu.kovex.witty.plugin.core.ui.LayerSliderTagLib</resource>
     <resource>hu.kovex.witty.plugin.core.ui.WittyFormTagLib</resource>
   </resources>
   <dependencies>
