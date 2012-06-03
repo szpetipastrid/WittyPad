@@ -14,7 +14,7 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
-    background: #9AE1F5 url("../images/bg_blue.jpg") no-repeat fixed;
+    background: #4d4d4d url("../images/bg_tile.jpg") fixed;
     width: 100%;
 
 }
@@ -28,9 +28,6 @@ body {
     width: 1000px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    /*-webkit-box-shadow: 0 0 15px #efefef;*/
-    /*-moz-box-shadow: 0 0 15px #efefef;*/
-    /*box-shadow: 0 0 15px #efefef;*/
 }
 
 /* Whole portal background and borders */
@@ -114,7 +111,7 @@ p.subtitle {
 
 .home-content {
     width: 980px;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .page-header {
