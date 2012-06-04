@@ -11,147 +11,25 @@
 
 /* iphone 4 portrait */
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (orientation:portrait) {
-    .welcome-content {
+    body {
         width: 640px;
-        height: 850px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-family: Arial;
-        font-size: 22px;
+        height: 700px;
     }
 
-    .welcome-content-images {
-        margin-left: 70px;
-        margin-top: 40px;
-        width: 500px;
-    }
-
-    .welcome-content-logo {
-        background: url('../images/welcome/wittypad-logo.png') no-repeat;
-        width: 295px;
-        height: 71px;
-        margin-left: 92px;
-    }
-
-    .welcome-content-draw {
-        background: url('../images/welcome/welcome-draw-narrow.png') no-repeat;
-        width: 500px;
-        height: 309px;
-    }
-
-    .welcome-content-open {
-        margin-top: 0px;
-        width: 600px;
-    }
-
-    .welcome-content-open-link {
-        width: 300px;
-        margin-left: 150px;
-        color: #e8f0de;
-        background: #64A82B url('../images/welcome/open-button-mobile-bg-x2.png');
-        display: block;
-        text-align: center;
-        height: 100px;
-        font-family: "Lato", sans-serif;
-        font-size: 28px;
-        font-weight: 800;
-        outline: medium none;
-        border-radius: 20px;
-        -moz-border-radius: 20px;
-        cursor: pointer;
-        line-height: 100px;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        float: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        clear: both;
-        text-decoration: none;
-    }
-
-    .welcome-content-open-info {
-        text-align: justify;
-        padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 30px;
-        width: 560px;
-        clear: both;
+    .welcome-border {
+        top: 370px !important;
     }
 }
 
 /* iphone 4 landscape */
 @media only screen and (-webkit-min-device-pixel-ratio:2)
 and (orientation:landscape) {
-
-    .welcome-content {
+    body {
         width: 960px;
-        height: 548px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-family: Arial;
-        font-size: 22px;
+        height: 450px;
     }
 
-    .welcome-content-images {
-        margin-left: 30px;
-        margin-top: 90px;
-        width: 360px;
-        float: left;
-    }
-
-    .welcome-content-logo {
-        background: url('../images/welcome/wittypad-logo.png') no-repeat;
-        width: 295px;
-        height: 71px;
-        margin-left: 22px;
-    }
-
-    .welcome-content-draw {
-        background: url('../images/welcome/welcome-draw.png') no-repeat;
-        width: 360px;
-        height: 360px;
-    }
-
-    .welcome-content-open {
-        margin-top: 90px;
-        float: left;
-        width: 540px;
-        font-family: Arial;
-    }
-
-    .welcome-content-open-link {
-        width: 500px;
-        margin-left: 20px;
-        color: #e8f0de;
-        background: #64A82B url('../images/welcome/open-button-mobile-bg-x2.png');
-        display: block;
-        text-align: center;
-        height: 120px;
-        font-family: "Lato", sans-serif;
-        font-size: 28px;
-        font-weight: 800;
-        outline: medium none;
-        border-radius: 20px;
-        -moz-border-radius: 20px;
-        cursor: pointer;
-        line-height: 120px;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        float: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-decoration: none;
-    }
-
-    .welcome-content-open-info {
-        padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 20px;
-        width: 490px;
-        clear: both;
+    .welcome-border {
+        top: 250px !important;
     }
 }

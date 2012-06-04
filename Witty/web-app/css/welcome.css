@@ -1,23 +1,17 @@
 .welcome-border {
     position: absolute;
-    width: 700px;
+    width: 400px;
     height: 400px;
-    background: url('../images/transparent_white.png');
     padding: 10px;
     left: 50%;
     top: 50%;
-    margin-left: -350px;
+    margin-left: -200px;
     margin-top: -200px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
 }
 
 .welcome-content {
-    width: 700px;
+    width: 400px;
     height: 400px;
-    background: url('../images/home/slides/slide_bg.jpg') -150px 0;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
 }
 
 .welcome-logo {
@@ -34,35 +28,76 @@
 .welcome-button {
     width: 160px;
     height: 160px;
-    border: solid 1px red;
-    background: url('../images/transparent_white.png');
-    float:left;
-    margin-left: 10px;
-    margin-right: 10px;
+    background: url('../images/welcome/button_bg.jpg');
+    float: left;
     margin-top: 80px;
-
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 4px -4px black;
+    -moz-box-shadow: 0 10px 4px -4px black;
+    box-shadow: 0 10px 4px -4px black;
+    top: 30px;
 }
 
 .welcome-button a {
     display: block;
     width: 160px;
     height: 160px;
+    color: #4d4d4d;
 }
 
 .welcome-button-video {
-    margin-left: 180px;
+    position: absolute;
+    left: 30px;
 }
 
 .welcome-button-video a {
-    line-height: 160px;
+    background: url('../images/welcome/play_video128.png') 16px 16px no-repeat;
 }
 
-
 .welcome-button-start {
-
+    position: absolute;
+    left: 230px;
 }
 
 .welcome-button-start a {
-
+    background: url('../images/welcome/start_witty128.png') 16px 16px no-repeat;
 }
 
+.welcome-button-link {
+    width: 160px;
+    height: 30px;
+    top: 280px;
+}
+
+.welcome-button-link-video {
+    position: absolute;
+    left: 30px;
+}
+
+.welcome-button-link a {
+    display: block;
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    color: white;
+    background: url('../images/transparent_black.png');
+    padding: 5px;
+    text-align: center;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.welcome-button-link-start {
+    position: absolute;
+    left: 230px;
+}
+
+#welcome-content-open-link {
+    position: absolute;
+    top: 340px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}

@@ -14,8 +14,7 @@ class WelcomeController {
         } else {
             browser.choice() {
                 browser.isiPhone() {
-                    //If request came from iPhone, show mobile welcome page
-                    redirect action: 'mobile'
+                    []
                 }
                 browser.isMobile() {
                     //If request came from mobile phone, except iPhone, open the application
@@ -23,15 +22,9 @@ class WelcomeController {
                 }
                 browser.otherwise() {
                     //If request came from not mobile phone, show desktop welcome page
-                    redirect action: 'desktop'
+                    []
                 }
             }
         }
-    }
-
-    def desktop = {
-    }
-
-    def mobile = {
     }
 }
