@@ -12,30 +12,23 @@
     <jqe:jQueryResources/>
     <link rel="icon" type="image/x-icon" href="${resource(dir: 'images', file: 'favicon.ico')}">
     <link rel="stylesheet" type="text/css" href="${resource(dir: "/css", file: "welcome.css")}">
+    <link rel="stylesheet" type="text/css" href="${resource(dir: "/css", file: "main.css")}">
 </head>
 
 <body>
-<div class="welcome-content">
-    <div class="welcome-content-images">
-        <div class="welcome-content-logo">
 
+<div class="welcome-border shadow_around">
+    <div class="welcome-content">
+                   <div class="welcome-logo"></div>
+        
+        <div class="welcome-button welcome-button-video">
+            <a href="#"></a>
         </div>
 
-        <div class="welcome-content-draw">
-
+        <div class="welcome-button welcome-button-start">
+            <a href="#"></a>
         </div>
-    </div>
 
-    <div class="welcome-content-open">
-        <a class="welcome-content-open-link"
-           href="${createLink(controller: "home", action: "desktop")}">
-            <g:message code="welcome.open.text.button"/>
-        </a>
-
-        <div class="welcome-content-open-info">
-            <span id="welcome-content-open-link"></span>
-            <g:message code="welcome.open.info.click"/><br>
-        </div>
     </div>
 </div>
 

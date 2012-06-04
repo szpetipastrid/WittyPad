@@ -60,7 +60,7 @@
     </div>
 </browser:isiPhone>
 
-<div class="content_center">
+<div class="content_center shadow_around">
     <div class="content_center_inner">
         <table class="witty_banner">
             <tbody>

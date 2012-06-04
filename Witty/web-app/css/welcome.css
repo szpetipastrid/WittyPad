@@ -1,62 +1,68 @@
-.welcome-content {
-    width: 340px;
+.welcome-border {
     position: absolute;
+    width: 700px;
+    height: 400px;
+    background: url('../images/transparent_white.png');
+    padding: 10px;
     left: 50%;
     top: 50%;
-    margin-left: -170px;
-    margin-top: -300px;
+    margin-left: -350px;
+    margin-top: -200px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
-.welcome-content-logo {
+.welcome-content {
+    width: 700px;
+    height: 400px;
+    background: url('../images/home/slides/slide_bg.jpg') -150px 0;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.welcome-logo {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    margin-left: -107px;
     background: url('../images/welcome/wittypad-logo.png') no-repeat;
-    width: 295px;
-    height: 71px;
-    margin-left: 22px;
-}
-
-.welcome-content-draw {
-    background: url('../images/welcome/welcome-draw.png') no-repeat;
-    width: 340px;
-    height: 340px;
-}
-
-.welcome-content-open {
-    width: 300px;
-    font-family: Arial;
-    font-size: 12px;
+    width: 215px;
+    height: 42px;
 
 }
 
-.welcome-content-open-link {
-    margin-left: 20px;
-    width: 280px;
-    margin-top: 30px;
-    color: #e8f0de;
-    background: #64A82B url('../images/title_button_bg.png');
+.welcome-button {
+    width: 160px;
+    height: 160px;
+    border: solid 1px red;
+    background: url('../images/transparent_white.png');
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 80px;
+
+}
+
+.welcome-button a {
     display: block;
-    text-align: center;
-    height: 30px;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    font-weight: 800;
-    outline: medium none;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    cursor: pointer;
-    line-height: 30px;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    clear: both;
-    text-decoration: none;
+    width: 160px;
+    height: 160px;
 }
 
-.welcome-content-open-info {
-    padding-top: 15px;
-    margin-left: 20px;
-
-    width: 300px;
-    clear: both;
+.welcome-button-video {
+    margin-left: 180px;
 }
+
+.welcome-button-video a {
+    line-height: 160px;
+}
+
+
+.welcome-button-start {
+
+}
+
+.welcome-button-start a {
+
+}
+
