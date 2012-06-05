@@ -19,6 +19,9 @@
 <head>
     <meta name="layout" content="page"/>
     <title><g:layoutTitle/></title>
+    <link href='${resource(dir: 'css', file: 'home.css')}' rel='stylesheet' type='text/css'>
+    <script src="${resource(dir: '/modules/slider', file: 'plugins.js')}"></script>
+    <script src="${resource(dir: '/modules/slider', file: 'layerslider.kreaturamedia.jquery-min.js')}"></script>
     <g:layoutHead/>
 </head>
 

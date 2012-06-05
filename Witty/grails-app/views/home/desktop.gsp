@@ -116,7 +116,7 @@
 
                         <div class="build-it-up-button">
                             <g:link controller="community" action="create" params="[lang:request.selectedLang]"
-                                    class="title_button">
+                                    class="witty-button">
                                 <g:message code="home.tiles.build.it.up.button"/>
                             </g:link>
                         </div>

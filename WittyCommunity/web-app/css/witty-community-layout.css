@@ -9,45 +9,51 @@
  * Witty and WittyPad are the name of the software, please do not use it to other purposes.
  */
 
-.community-content {
-    position: absolute;
-    left: 50%;
-    top: 150px;
-    width: 800px;
-    margin-left: -400px;
-    background: url('../images/transparent_white.png');
-    padding: 10px;
-    -webkit-box-shadow: 15px 15px 15px #424242;
-    -moz-box-shadow: 15px 15px 15px #424242;
-    box-shadow: 15px 15px 15px #424242;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    font-size: 12px;
+.community-header {
+    background: url('../images/create-banner.jpg');
+    width: 980px;
+    height: 250px;
+
 }
 
-.community-content-inner {
-    width: 760px;
-    padding: 20px;
-    background: #ffffff;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+.community-header-title {
+    position: relative;
+    padding: 10px;
+    background: url('../images/transparent_black.png');
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 65px;
+    color: #ffffff;
+    left: 400px;
+    top: 20px;
+    width: 370px;
+    text-align: center;
+}
 
+.community-content {
+    padding: 20px 100px;
 }
 
 .community-content h1 {
-    background: url('../images/wizard-property-bullet.png') no-repeat 0 6px;
-    padding-left: 35px;
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 29px;
     color: #2C85D6;
-    border-bottom: solid 1px #2C85D6;
-    width: 500px;
+    border-bottom: solid 2px #2C85D6;
+    width: 800px;
 }
 
 .wizard-form {
     margin-top: 30px;
     clear: both;
+}
+
+.form-container {
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 580px;
+    padding: 20px;
+    border-top: dotted 1px #2C85D6;
+    border-bottom: dotted 1px #2C85D6;
 }
 
 .form-element {
