@@ -98,44 +98,17 @@
             <g:message code="witty.plugin.community.create.wizard.step.2.text"/>
             <label class="ltitle"><g:message code="witty.plugin.community.create.wizard.step.2.type"/></label>
 
-            <div id="typeRadio">
-                <g:radio id="typeRadioCommunity" value="community" name="type"
-                         checked="${type=='community'}"/><label for="typeRadioCommunity"><g:message
-                    code="witty.plugin.community.create.wizard.step.2.type.community"/></label>
-                <g:radio id="typeRadioCompany" value="company" name="type" checked="${type=='company'}"/><label
-                    for="typeRadioCompany"><g:message
-                        code="witty.plugin.community.create.wizard.step.2.type.company"/></label>
-                <g:radio id="typeRadioPersonal" value="personal" name="type"
-                         checked="${type=='personal'}"/><label
-                    for="typeRadioPersonal"><g:message
-                        code="witty.plugin.community.create.wizard.step.2.type.personal"/></label>
-            </div>
-            <script type="text/javascript">
-                $(function() {
-                    $("#typeRadio").buttonset();
-                });
-            </script>
+           <div style="text-align: center">
+               Usage of your Witty: <b>Community</b> <a href="#">Change</a>
+           </div>
+
+            <div style="clear: both"></div>
 
             <label class="ltitle"><g:message code="witty.plugin.community.create.wizard.step.2.share"/></label>
 
-            <div id="visibilityRadio">
-                <g:radio id="visibilityRadioFullOpen" value="community" name="visibility"
-                         checked="${visibility=='community'}"/><label
-                    for="visibilityRadioFullOpen"><g:message
-                        code="witty.plugin.community.create.wizard.step.2.share.everybody"/></label>
-                <g:radio id="visibilityRadioPublic" value="public" name="visibility"
-                         checked="${visibility=='public'}"/><label
-                    for="visibilityRadioPublic"><g:message
-                        code="witty.plugin.community.create.wizard.step.2.share.everybody.read"/></label>
-                <g:radio id="visibilityRadioPrivate" value="private" name="visibility"
-                         checked="${visibility=='private'}"/><label for="visibilityRadioPrivate"><g:message
-                    code="witty.plugin.community.create.wizard.step.2.share.nobody"/></label>
-            </div>
-            <script type="text/javascript">
-                $(function() {
-                    $("#visibilityRadio").buttonset();
-                });
-            </script>
+
+
+
             <label class="ltitle"><g:message
                     code="witty.plugin.community.create.wizard.step.2.short.description"/></label>
             <g:textArea name="description" rows="" cols="" class="form-input"/>

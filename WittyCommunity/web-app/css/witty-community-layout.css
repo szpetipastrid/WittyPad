@@ -30,16 +30,23 @@
 }
 
 .community-content {
+    border:  solid 1px red;
     padding: 20px 100px;
+    font-size: 12px;
 }
 
 .community-content h1 {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 29px;
     color: #2C85D6;
-    border-bottom: solid 2px #2C85D6;
+    border-bottom: solid 1px #2C85D6;
     width: 800px;
+}
+
+.witty-form {
+    border:  solid 1px green;
+    width: 600px;
 }
 
 .wizard-form {
@@ -60,6 +67,10 @@
     clear: both;
 }
 
+.form-label {
+
+}
+
 .wizard-form label.ltitle {
     font-size: 16px;
     display: block;
@@ -67,7 +78,7 @@
     padding-bottom: 5px;
 }
 
-.wizard-form input.form-input {
+input.form-input {
     padding: 3px;
     float: left;
     font-size: 16px;
@@ -78,7 +89,7 @@
     /*margin-bottom: 20px;*/
 }
 
-.wizard-form .postfix {
+.postfix {
     font-size: 16px;
     height: 30px;
     float: left;
