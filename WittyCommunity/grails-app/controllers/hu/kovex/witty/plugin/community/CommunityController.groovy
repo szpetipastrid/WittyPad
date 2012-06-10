@@ -5,16 +5,10 @@ import grails.converters.XML
 class CommunityController {
 
     def index = {
-        forward action: "home"
+        redirect action: "home"
     }
 
     def home = {
-    }
-
-    def pluginInfo = {
-        render """
-
-        """ as XML
     }
 
     def tile = {
@@ -54,5 +48,21 @@ class CommunityController {
                 msg = message(code: "witty.plugin.community.create.wizard.step.1.community.address.valid.valid")
         }
         [id: id, result: result, resultMessage: msg]
+    }
+
+    def save = {
+
+        def lang = "en"
+        static def community = [
+                wclass: "clazz_Community",
+                lang: "${lang}",
+                template: "community",
+                wproperties: [
+                        prop_name: [value: ["${lang}": "WebGlossary"]],
+                        prop_uri: [value: [all: "www"]],
+                        prop_description: [value: ["${lang}": "A WebGlossary építők lelkes közössége", en: "Community of the WebGlossary builders"]]
+                ]
+        ]
+
     }
 }
