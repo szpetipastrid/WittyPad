@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
 package filters
 
 import org.codehaus.groovy.grails.commons.ConfigurationHolder as CH
@@ -24,7 +35,8 @@ class CommunityFilters {
         subDomain(uri: "/**") {
             before = {
                 def domainName = (request.getRequestURL() as String).substring(7)
-                def domainIndex = domainName.indexOf(CH.config.grails.serverName as String)
+                def mainDomain = CH.config.grails.serverName as String
+                def domainIndex = domainName.indexOf(mainDomain)
                 def subDomain = null
                 def layout = null
 //                assert domainIndex >= 0
@@ -52,8 +64,13 @@ class CommunityFilters {
                 request.setAttribute("layout", layout)
                 request.setAttribute("subDomain", subDomain)
                 def community = new CommunityService().getCommunity(subDomain)
-                request.setAttribute("community", community)
-
+                request.setAttribute("witty", community)
+                request.setAttribute("mainDomain", mainDomain)
+                if (community) {
+                    request.setAttribute("fullDomain", "http://${subDomain}.${mainDomain}")
+                } else {
+                    request.setAttribute("fullDomain", "http://${mainDomain}")
+                }
             }
         }
     }

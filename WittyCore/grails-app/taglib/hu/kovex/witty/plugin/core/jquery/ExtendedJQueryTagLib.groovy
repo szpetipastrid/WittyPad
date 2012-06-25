@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
 package hu.kovex.witty.plugin.core.jquery
 
 class ExtendedJQueryTagLib {
@@ -5,8 +16,13 @@ class ExtendedJQueryTagLib {
 
     def jQueryResources = {
         out << """
-   <script src="${g.resource(plugin: 'witty-core', dir: '/jquery', file: 'jquery-1.6.2.min.js')}" type="text/javascript"></script>
-   <script src="${g.resource(plugin: 'witty-core', dir: '/jquery/jquery-ui/js', file: 'jquery.smartWizard-2.0.min.js')}" type="text/javascript"></script>
+   <script src="${g.resource(plugin: 'witty-core', dir: '/jquery/1.7.2', file: 'jquery-1.7.2.min.js')}" type="text/javascript"></script>
+   <script src="${g.resource(plugin: 'witty-core', dir: '/jquery/1.7.2', file: 'jquery-ui-1.8.21.custom.min.js')}" type="text/javascript"></script>
+        """
+    }
+
+    def jQueryUI = {
+        out << """
    <script src="${g.resource(plugin: 'witty-core', dir: '/jquery/jquery-ui/js', file: 'jquery-ui-1.8.16.custom.min.js')}" type="text/javascript"></script>
    <script src="${g.resource(plugin: 'witty-core', dir: '/jquery/jquery-ui/js', file: 'jquery.ui.core.js')}" type="text/javascript"></script>
    <script src="${g.resource(plugin: 'witty-core', dir: '/jquery/jquery-ui/js', file: 'jquery.ui.widget.js')}" type="text/javascript"></script>

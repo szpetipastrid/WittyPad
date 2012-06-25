@@ -1,9 +1,4 @@
-<!doctype html>
-<html>
-<head>
-    <title>Grails Runtime Exception</title>
-    <meta name="layout" content="main">
-    <link rel="stylesheet" href="%{--
+%{--
   - Copyright (c) 2012. Witty Project.
   - Peter Szilagyi
   - szpetip@gmail.com
@@ -14,10 +9,18 @@
   - Witty and WittyPad are the name of the software, please do not use it to other purposes.
   --}%
 
-${resource(dir: 'css', file: 'errors.css')}" type="text/css">
-</head>
 
-<body>
-<g:renderErrors exception="${exception}"/>
-</body>
-</html>
+
+<%--
+  Created by IntelliJ IDEA.
+  User: szpetip
+  Date: 5/14/12
+  Time: 7:05 PM
+--%>
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+<meta name="layout" content="ajax_response"/>
+
+<g:if test="${result != 'valid'}">
+    ${resultMessage}
+</g:if>

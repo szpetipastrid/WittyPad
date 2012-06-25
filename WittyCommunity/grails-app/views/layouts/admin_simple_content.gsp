@@ -9,16 +9,20 @@
   - Witty and WittyPad are the name of the software, please do not use it to other purposes.
   --}%
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
-  Date: 5/14/12
-  Time: 7:05 PM
+  Date: 6/25/12
+  Time: 10:59 AM
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
-<meta name="layout" content="ajax_response"/>
-
-<g:if test="${result != 'valid'}">
-    ${resultMessage}
-</g:if>
+<head>
+    <link href='${resource(dir: 'css', file: 'admin.css')}' rel='stylesheet' type='text/css'>
+    <link href='${resource(dir: 'css', file: 'admin-forms.css')}' rel='stylesheet' type='text/css'>
+    <link href='${resource(dir: 'css', file: 'witty-forms.css')}' rel='stylesheet' type='text/css'>
+    <g:layoutHead/>
+</head>
+<g:layoutBody/>

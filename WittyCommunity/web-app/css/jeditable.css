@@ -9,3 +9,14 @@
  * Witty and WittyPad are the name of the software, please do not use it to other purposes.
  */
 
+.jeditable-activate {
+    margin-left: 10px;
+    float: left;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    line-height: 30px;
+    font-family: Arial;
+    font-size: 12px;
+}
+

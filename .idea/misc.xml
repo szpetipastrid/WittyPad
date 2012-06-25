@@ -10,6 +10,16 @@
     <autodetection-disabled>
       <facet-type id="Spring">
         <modules>
+          <module name="JEditablePlugin">
+            <files>
+              <file url="file://$PROJECT_DIR$/JEditablePlugin/web-app/WEB-INF/applicationContext.xml" />
+            </files>
+          </module>
+          <module name="Witty">
+            <files>
+              <file url="file://$PROJECT_DIR$/Witty/web-app/WEB-INF/applicationContext.xml" />
+            </files>
+          </module>
           <module name="WittyApp">
             <files>
               <file url="file://$PROJECT_DIR$/WittyApp/web-app/WEB-INF/applicationContext.xml" />

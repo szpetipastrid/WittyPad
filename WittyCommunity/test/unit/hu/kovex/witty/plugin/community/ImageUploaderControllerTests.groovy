@@ -9,3 +9,20 @@
  * Witty and WittyPad are the name of the software, please do not use it to other purposes.
  */
 
+package hu.kovex.witty.plugin.community
+
+import grails.test.*
+
+class ImageUploaderControllerTests extends ControllerUnitTestCase {
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testSomething() {
+
+    }
+}

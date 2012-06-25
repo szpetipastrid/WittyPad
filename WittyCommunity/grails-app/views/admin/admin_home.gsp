@@ -9,34 +9,35 @@
   - Witty and WittyPad are the name of the software, please do not use it to other purposes.
   --}%
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
-  Date: 5/13/12
-  Time: 4:47 PM
+  Date: 6/17/12
+  Time: 4:32 PM
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
+
 <html>
 <head>
-    <meta name="layout" content="page"/>
-    <title><g:layoutTitle/></title>
-    <link href='${resource(dir: 'css', file: 'witty-community.css')}' rel='stylesheet' type='text/css'>
-    <g:layoutHead/>
+    <title><g:message code="witty.plugin.community.admin.dashboard.title"/></title>
+    <jqe:jQueryResources/>
 </head>
 
 <body>
+<div style="width: 100%;">
+    <div id="wittyList"></div>
 
-<div id="menu_banner">
-    <g:pageProperty name="page.menu"/>
+    <div id="interestsList"></div>
+    <script>
+        $(function() {
+                $("#wittyList").load("${createLink(controller:"admin", action:"wittyList")}");
+            $("#interestsList").load("${createLink(controller:"admin", action:"my_interests")}");
+        });
+    </script>
 </div>
 
-<div class="page-header community-header">
-    <div class="community-header-title"><g:pageProperty name="page.header"/></div>
-</div>
-
-<div class="community-content">
-    <g:pageProperty name="page.content"/>
-</div>
 </body>
 </html>
