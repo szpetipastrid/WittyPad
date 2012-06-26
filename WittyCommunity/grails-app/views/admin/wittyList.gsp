@@ -31,6 +31,9 @@
             }
         }
         $(function() {
+            if (window.location.hash == "#create") {
+                $("#createWittyContainer").load('${createLink(controller:"community",action:"create")}');
+            }
             $("#newWittyButton").click(function() {
                 $("#createWittyContainer").load('${createLink(controller:"community",action:"create")}');
             });

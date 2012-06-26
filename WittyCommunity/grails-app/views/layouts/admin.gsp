@@ -35,8 +35,8 @@
 <body>
 <div class="wrapper">
     <div class="adminHeader">
-        <img src="${resource(dir: "images", file: "menu_logo.png")}"
-             style="margin-left:50px;margin-top: 5px;height: 40px;"/>
+        <a href="http://${createLink(controller: "home",base: mainDomain)}"><img src="${resource(dir: "images", file: "menu_logo.png")}"
+             style="margin-left:50px;margin-top: 5px;height: 40px;border: none;"/></a>
     </div>
 
     <div style="padding-left: 50px;" class="adminTitle fixedTitle">

@@ -17,6 +17,14 @@ environments {
         /* No database needed in this time. */
     }
     demo {
-        /* No database needed in this time. */
+        grails {
+            mongo {
+                host = "localhost"
+                port = 27017
+                username = "wittyuser"
+                password = "helloworld"
+                databaseName = "witty-dev"
+            }
+        }
     }
 } 

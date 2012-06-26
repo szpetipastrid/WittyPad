@@ -14,10 +14,10 @@
 package hu.kovex.witty.plugin.community.image
 
 import org.codehaus.groovy.grails.commons.ConfigurationHolder as CH
+
 import hu.kovex.witty.plugin.community.CommunityImageGenerator
-import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
-import org.apache.ivy.plugins.repository.ssh.Scp.FileInfo
+import javax.imageio.ImageIO
 
 class ImageController {
 
@@ -27,7 +27,8 @@ class ImageController {
             bindData(image, params)
             response.setHeader("Content-disposition", "attachment; filename=${image.file}")
             response.contentType = "image/png" //'image/jpeg' will do too
-            response.outputStream << image.image
+            ImageIO.write(image.image, "png", response.outputStream)
+//            response.outputStream << image.imag
             response.outputStream.flush()
         } finally {
             response.outputStream.close()
@@ -41,16 +42,17 @@ class ImageCommand {
     Integer width
     Integer height
 
-    byte[] getImage() {
+    BufferedImage getImage() {
         def root = CH.config.profile.images as String
-        new File("${root}/${file}").bytes
+//        new File("${root}/${file}").bytes
 //        def root = CH.config.profile.images as String
-        //        def source = new File("${root}/${file}")
-        //        BufferedImage img
-        //        try {
-        //            img = ImageIO.read(source)
-        //        } finally {
-        //        }
-        //        imageGenerator.transformImage(img, [width: width, height: height])
+        def source = new File("${root}/${file}")
+        BufferedImage img
+        try {
+            /* TODO: This code causes Too many open files exception on Mac OSX, but works well on other OS */
+            img = ImageIO.read(source)
+        } finally {
+        }
+        imageGenerator.transformImage(img, [width: width, height: height])
     }
 }

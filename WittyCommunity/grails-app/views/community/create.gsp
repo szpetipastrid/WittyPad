@@ -20,6 +20,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <meta name="layout" content="admin_simple_content"/>
 <g:javascript library="jquery"/>
+<jqe:jQueryResources/>
 <link href='${resource(dir: 'css', file: 'create-witty.css')}' rel='stylesheet' type='text/css'>
 
 <div id="popUpBackground" class="popUpBackground">
@@ -35,8 +36,7 @@
         <wittyForm:showMore
                 shortMessage="${message(code:'witty.plugin.community.create.text')}"
                 longMessage="${message(code:'witty.plugin.community.create.text.more')}"/>
-        <g:formRemote name="createWittyForm" url="[controller:'community', action:'save']"
-                      onSuccess="wittySuccessfullyCreated(data, textStatus);">
+        <g:form name="createWittyForm">
             <div class="create-witty-form">
                 <div id="communityTitleValidity" class="error_place"></div>
 
@@ -64,8 +64,11 @@
                 </div>
 
                 <div class="value" style="text-align: right;">
-                    <g:submitButton name="create" value="${message(code:'witty.plugin.community.create.button.create')}"
-                                    class="button nbutton"/>
+                    <g:submitToRemote name="create"
+                                      value="${message(code:'witty.plugin.community.create.button.create')}"
+                                      url="[controller:'community', action:'save']" asynchronous="true"
+                                      onSuccess="wittySuccessfullyCreated(data);"
+                                      class="button nbutton"/>
                     <a id="createWittyCancelButton" class="button sbutton"><g:message
                             code="witty.plugin.community.create.button.cancel"/></a>
                 </div>
@@ -73,7 +76,7 @@
                 <div style="clear:both;"></div>
 
             </div>
-        </g:formRemote>
+        </g:form>
     </div>
 </div>
 <script type="text/javascript">
@@ -95,26 +98,26 @@
         $("#communityAddressValidity").load(url);
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         document.getElementById("communityTitleField").focus();
-        $("#communityTitleField").keyup(function() {
+        $("#communityTitleField").keyup(function () {
             checkWittyName();
         });
 
-        $("#communityAddressField").keyup(function() {
+        $("#communityAddressField").keyup(function () {
             checkWittyAddress();
         });
 
-        $("#closeCrateWittyButton").click(function() {
+        $("#closeCrateWittyButton").click(function () {
             closeCreateWittyWindow();
         });
 
-        $("#createWittyCancelButton").click(function() {
+        $("#createWittyCancelButton").click(function () {
             closeCreateWittyWindow();
         });
     });
 
-    function wittySuccessfullyCreated(data, status) {
+    function wittySuccessfullyCreated(data) {
         if (data.result.status == "success") {
             closeCreateWittyWindow();
             reloadWittyList();

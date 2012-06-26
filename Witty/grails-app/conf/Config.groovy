@@ -63,6 +63,7 @@ environments {
         //working with sub domains
         grails.serverURL = "http://wittypad.local:8088/${appName}"
         grails.serverName = "wittypad.local:8088/Witty"
+        profile.images="/Users/szpetip/Projects/Witty/server-uploads/witties"
     }
     test {
         grails.serverURL = "http://localhost:8088/${appName}"
@@ -73,6 +74,7 @@ environments {
         grails.serverURL = "http://wittypad.com"
         grails.gsp.enable.reload = true
         grails.serverName = "wittypad.com"
+        profile.images="/home/tomcat/wittypad/profile_images"
     }
 
 }

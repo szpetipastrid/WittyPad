@@ -115,10 +115,8 @@
                         <div class="build-it-up-text"><g:message code="home.tiles.build.it.up.text"/></div>
 
                         <div class="build-it-up-button">
-                            <g:link controller="community" action="create" params="[lang:request.selectedLang]"
-                                    class="witty-button">
-                                <g:message code="home.tiles.build.it.up.button"/>
-                            </g:link>
+                            <a href="${createLink(controller: "admin")}#create" class="witty-button"><g:message code="home.tiles.build.it.up.button"/></a>
+
                         </div>
                     </div>
                 </div>
