@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -25,22 +27,10 @@
     <ine:head/>
     <script src="${resource(dir: "js", file: "fileuploader.js")}"></script>
     <link href='${resource(dir: 'css', file: 'uploader.css')}' rel='stylesheet' type='text/css'>
-
 </head>
 <content tag="content">
-    <div class="title">
-        Thanks for registering your Witty!
-    </div>
-
-    <div style="text-align: justify;max-width: 1200px;">
-        The <b>${fullDomain}</b> address is yours, but your Witty isn't accessible to visitors.
-    To start your Witty, click to the 'Activate  Witty' button bellow.
-    Before activating your Witty, highly recommended to enter some additional information about your Witty.
-    This step isn't mandatory, but it helps other peoples to find you. Important, you have 24 hours to
-    activate your Witty!</div>
-
     <div class="admin-form">
-        <h2>Basic</h2>
+        <h2><g:message code="witty.plugin.community.create.witty.basic"/></h2>
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.title"/></div>
 
@@ -63,19 +53,19 @@
 
         <div class="admin-divider"></div>
 
-        <h2>Publishing</h2>
+        <h2><g:message code="witty.plugin.community.create.witty.publishing"/></h2>
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.address"/></div>
 
         <div class="value" style="margin-left: 200px;">
             <div class="l" style="width: 500px;line-height: 30px;">
-                ${fullDomain} (cannot be modified now)
+                ${fullDomain} (<g:message code="witty.plugin.community.create.witty.publishing.cannot.be.modified"/>)
             </div>
         </div>
 
         <div class="admin-divider"></div>
 
-        <h2>Profile image</h2>
+        <h2><g:message code="witty.plugin.community.create.witty.profile.image"/></h2>
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.profile.image"/></div>
 
@@ -88,7 +78,7 @@
             </div>
 
             <div class="profile-image-upload">
-                <div>Choose an image to improve your Witty:</div>
+                <div><g:message code="witty.plugin.community.create.witty.profile.image.choose"/></div>
                 <script>
                     function setProfileImage(profileImage) {
                         var l = "${createLink(controller: "image", params: [width: 256, height: 256])}&file=" + encodeURIComponent(profileImage);
@@ -118,7 +108,7 @@
 
         <div class="admin-divider"></div>
 
-        <h2>Permissions</h2>
+        <h2><g:message code="witty.plugin.community.create.witty.permissions"/></h2>
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.profile.image"/></div>
 
@@ -126,33 +116,38 @@
             <div>
                 <div id="permissionValueContainer"><span id="permissionValueSpan">Public</span> <a
                         id="editPermissionValue"
-                        class="h inplace_edit_button">Edit</a></div>
+                        class="h inplace_edit_button"><g:message code="witty.plugin.community.create.edit"/></a></div>
 
                 <div id="permissionEditContainer" class="permissionEditContainer" style="display: none;">
                     <ul class="ul_flow">
                         <li><g:radio id="prop_access_public" value="public" name="prop_access"
                                      checked="${WInstance.prop(witty, 'prop_access', 'all') == 'public' || WInstance.prop(witty, 'prop_access', 'all') == ''}"/>
-                            <label for="prop_access_public">Anybody</label>
+                            <label for="prop_access_public"><g:message
+                                    code="witty.plugin.community.create.witty.permissions.anybody"/></label>
                         </li>
                         <li><g:radio id="prop_access_readonly" value="readonly" name="prop_access"
                                      checked="${WInstance.prop(witty, 'prop_access', 'all') == 'readonly'}"/>
-                            <label for="prop_access_readonly">Anybody to read</label>
+                            <label for="prop_access_readonly"><g:message
+                                    code="witty.plugin.community.create.witty.permissions.anybody.to.read"/></label>
                         </li>
                         <li><g:radio id="prop_access_private" value="private" name="prop_access"
                                      checked="${WInstance.prop(witty, 'prop_access', 'all') == 'private'}"/>
-                            <label for="prop_access_private">Only for invited</label>
+                            <label for="prop_access_private"><g:message
+                                    code="witty.plugin.community.create.witty.permissions.only.for.invited"/></label>
                         </li>
                     </ul>
 
 
-                    <a id="savePermissionValue" class="button nbutton">Save</a>
-                    <a id="cancelPermissionValue" class="button sbutton">Cancel</a>
+                    <a id="savePermissionValue" class="button nbutton"><g:message
+                            code="witty.plugin.community.create.button.save"/></a>
+                    <a id="cancelPermissionValue" class="button sbutton"><g:message
+                            code="witty.plugin.community.create.button.cancel"/></a>
                 </div>
             </div>
             <script>
-                var message_public = "Anybody";
-                var message_readonly = "Anybody to read";
-                var message_private = "Only for invited";
+                var message_public = "${message(code:'witty.plugin.community.create.witty.permissions.anybody')}";
+                var message_readonly = "${message(code:'witty.plugin.community.create.witty.permissions.anybody.to.read')}";
+                var message_private = "${message(code:'witty.plugin.community.create.witty.permissions.only.for.invited')}";
                 function showPermission(permission) {
                     var permissionTitle;
                     if (permission == "public" || permission == "") {
@@ -175,7 +170,6 @@
                     $("#savePermissionValue").click(function() {
                         var val = $("input:radio[name=prop_access]:checked").val();
                         $.getJSON("${createLink(controller: "community", action: "save_property", params: [property: 'prop_access', address: WInstance.prop(witty, 'prop_uri', 'all')])}&value=" + encodeURIComponent(val),
-
                                 function() {
                                     showPermission(val);
                                 }
@@ -184,34 +178,12 @@
 
                         $("#permissionEditContainer").hide();
                         $("#permissionValueContainer").show();
-
                     });
 
                     $("#cancelPermissionValue").click(function() {
                         $("#permissionEditContainer").hide();
                         $("#permissionValueContainer").show();
                     });
-
-
-                });
-            </script>
-        </div>
-
-        <h2><g:message code="witty.plugin.community.create.witty.activate.title"/></h2>
-
-        <div class="key"></div>
-
-        <div class="value" style="margin-left: 200px;">
-            <g:message code="witty.plugin.community.create.witty.activate"/> All information can be modified later.<br>
-            <a id="activateWittyButton" class="button nbutton">Activate!</a>
-            <script type="text/javascript">
-                $("#activateWittyButton").click(function() {
-                    $.getJSON("${createLink(controller: "community", action: "save_property", params: [property: 'prop_status', value:'empty', address: WInstance.prop(witty, 'prop_uri', 'all')])}",
-                            function() {
-                                alert("Congratulation!\nYour Witty is activated, you can start edit and customize it!");
-                                window.location = "${createLink(controller:'admin', action:'index')}";
-                            }
-                    );
                 });
             </script>
         </div>

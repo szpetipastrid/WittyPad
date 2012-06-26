@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -20,7 +22,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <jqe:jQueryResources/>
 
-<head><title><sh:winstance obj="${witty}" val="prop_name"/></title></head>
+<head><title><sh:winstance obj="${witty}" val="prop_name"/> Witty</title></head>
 <content tag="title">
     <div class="title t" style="line-height: 70px;float:left;"><sh:winstance obj="${witty}" val="prop_name"/> -</div>
 
@@ -33,19 +35,19 @@
 
 
     function showOverview() {
-        setAdminSubTitle("Overview");
+        setAdminSubTitle("${message(code:'witty.plugin.admin.dashboard.menu.overview')}");
         $("#wittyAdminContent").load('${createLink(controller:"admin", action:"overview")}');
         window.location.hash = "overview";
     }
 
     function showBasicSettings() {
-        setAdminSubTitle("Settings");
+        setAdminSubTitle("${message(code:'witty.plugin.admin.dashboard.menu.settings')}");
         $("#wittyAdminContent").load('${createLink(controller:"admin", action:"settings_basic")}');
         window.location.hash = "settings";
     }
 
     function showOthersSettings() {
-        setAdminSubTitle("Others");
+        setAdminSubTitle("${message(code:'witty.plugin.admin.dashboard.menu.others')}");
         $("#wittyAdminContent").load('${createLink(controller:"admin", action:"settings_others")}');
         window.location.hash = "others";
     }
@@ -74,7 +76,7 @@
 
     });
     function setAdminSubTitle(subTitle) {
-        document.title = "${sh.winstance(obj:witty,val:'prop_name')} Witty Dashboard - " + subTitle;
+        document.title = "${sh.winstance(obj:witty,val:'prop_name')} ${message(code:'witty.plugin.admin.dashboard.window.title')} - " + subTitle;
         $("#adminSubtitle").text(subTitle);
     }
 
@@ -82,10 +84,10 @@
 </script>
 
 <div class="adminMenu">
-    <a id="overviewButton" class="overview t">Overview</a>
-    <a id="layoutButton" class="layout t">Layout</a>
-    <a id="settingsButton" class="settings t">Settings</a>
-    <a id="othersButton" class="settings t">Others</a>
+    <a id="overviewButton" class="overview t">${message(code:'witty.plugin.admin.dashboard.menu.overview')}</a>
+    <a id="layoutButton" class="layout t">${message(code:'witty.plugin.admin.dashboard.menu.layout')}</a>
+    <a id="settingsButton" class="settings t">${message(code:'witty.plugin.admin.dashboard.menu.settings')}</a>
+    <a id="othersButton" class="settings t">${message(code:'witty.plugin.admin.dashboard.menu.others')}</a>
 </div>
 
 <div id="wittyAdminContent" class="wittyAdminContent"></div>

@@ -11,6 +11,8 @@
 
 
 
+
+
 package hu.kovex.witty.plugin.community
 
 class InPlaceEditorTagLib {
@@ -45,7 +47,7 @@ class InPlaceEditorTagLib {
     private def common = { address, property, type, cssClass, link, editButton, text ->
         def id = "${address}_${property}"
         out << """
-                <div class="${cssClass} ${cssClass}_${type}" id="${id}">${text}</div><a id="${id}EditButton" class="h inplace_edit_button">Edit</a>
+                <div class="${cssClass} ${cssClass}_${type}" id="${id}">${text}</div><a id="${id}EditButton" class="h inplace_edit_button">${message(code:'witty.plugin.community.create.edit')}</a>
           <script type=\"text/javascript\">
               \$(function () {
         var ${id}Delegate = {

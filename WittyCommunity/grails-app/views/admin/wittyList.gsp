@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -24,6 +26,7 @@
     <jqe:jQueryResources/>
     <script type="text/javascript">
         function reloadWittyList() {
+            window.location.hash = "";
             if (document.getElementById("wittyList") != null) {
                 $("#wittyList").load("${createLink(controller:"admin", action:"wittyList")}");
             } else {
@@ -48,31 +51,29 @@
 
     <div>
         <a id="newWittyButton" class="button sbutton"
-           style="width: 120px;margin-left: 30px;margin-top: 15px;"><g:message
-                code="witty.plugin.community.create.button.new.witty"/></a>
-
-        <div class="t" style="clear: both;padding-top: 20px;">
-            <ul>
-                <li><a href="">All (${wittyList.size()})</a></li>
-                <li><a href="">New (${wittyList.size()})</a></li>
-            </ul>
-
-        </div>
+           style="width: 120px;margin-left: 30px;">
+            <g:message code="witty.plugin.community.create.button.new.witty"/></a>
     </div>
 </content>
 <content tag="content">
     <div class="wittyListContainer">
+    <g:if test="${wittyList.isEmpty()}">
+        <div class="l" style="padding-left: 10px;line-height: 30px;"><g:message code="witty.plugin.admin.witty.list.empty"/></div>
+    </g:if>
         <g:each in="${wittyList}">
+            <g:set var="baseUrl" value="http://${WInstance.prop(it,'prop_uri', 'all')}.${mainDomain}"/>
             <div class="wittyListElement hbg">
                 <div class="wittyListElementTitle">
                     <span class="subTitle t"><a href=""><sh:winstance obj="${it}" val="prop_name"/></a></span><br>
 
                     <div style="clear: both;">
-                        <g:message code="witty.plugin.community.create.witty.address.label"/> <a href=""><sh:winstance
-                            obj="${it}" val="prop_uri"/>.wittypad.com</a>
+                        <g:message code="witty.plugin.community.create.witty.address.label"/> <a href="${baseUrl}" target="_blank">
+                        <sh:winstance obj="${it}" val="prop_uri"/>.wittypad.com</a>
                     </div>
                 </div>
+                <div class="wittyListElementRating">
 
+                </div>
                 <div class="wittyListElementButtons">
                     <g:set var="openButton" value="open${WInstance.prop(it,'prop_uri', 'all')}"/>
                     <g:set var="dashboardButton" value="dashboard${WInstance.prop(it,'prop_uri', 'all')}"/>
@@ -85,11 +86,9 @@
                     <script type="text/javascript">
                         $(function() {
                             $("#${openButton}").click(function() {
-                                <g:set var="baseUrl" value="http://${WInstance.prop(it,'prop_uri', 'all')}.${mainDomain}"/>
                                 window.location = '${baseUrl}';
                             });
                             $("#${dashboardButton}").click(function() {
-                                <g:set var="baseUrl" value="http://${WInstance.prop(it,'prop_uri', 'all')}.${mainDomain}"/>
                                 window.location = '${createLink(controller:"admin", action:"index", base:baseUrl)}';
                             });
                         })
@@ -102,9 +101,9 @@
                 </div>
                 <g:if test="${WInstance.prop(it,'prop_status', 'all') == 'new'}">
                     <div class="newlyCreatedWittyInformation">
-                        <div class="bubbleText l">
-                            To start using this Witty, some additional information required. Click to the Set up Witty button
-                            to complete your witty creation!
+                        <div class="bubbleText l" style="width:675px;">
+                            <g:message code="witty.plugin.admin.witty.list.new.witty.info"/>
+
                         </div>
                     </div>
                 </g:if>

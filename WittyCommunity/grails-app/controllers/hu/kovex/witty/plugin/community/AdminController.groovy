@@ -11,6 +11,8 @@
 
 
 
+
+
 package hu.kovex.witty.plugin.community
 
 import hu.kovex.witty.plugin.core.domain.WInstance
@@ -34,9 +36,6 @@ class AdminController {
     }
 
     def overview = {
-//        if (WInstance.prop(request.getAttribute("witty"), 'prop_status', 'all') == "new") {
-//            forward action: "getting_started"
-//        }
 
     }
 
@@ -49,10 +48,6 @@ class AdminController {
     }
 
     def my_interests = {
-
-    }
-
-    def getting_started = {
 
     }
 

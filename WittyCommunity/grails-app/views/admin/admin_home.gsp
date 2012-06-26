@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -33,7 +35,7 @@
     <div id="interestsList"></div>
     <script>
         $(function() {
-                $("#wittyList").load("${createLink(controller:"admin", action:"wittyList")}");
+            $("#wittyList").load("${createLink(controller:"admin", action:"wittyList")}");
             $("#interestsList").load("${createLink(controller:"admin", action:"my_interests")}");
         });
     </script>

@@ -126,7 +126,14 @@ a {
 .wittyListElementTitle {
     float: left;
     height: 45px;
-    width: 500px;
+    width: 380px;
+}
+
+.wittyListElementRating {
+    float: left;
+    width: 120px;
+    height: 45px;
+    background: url('../images/ratings.png') 0 5px no-repeat;
 }
 
 .wittyListElementButtons {
@@ -170,6 +177,7 @@ a.button:hover {
 }
 
 .adminMenu {
+    position: absolute;
     margin-left: 50px;
     padding: 0;
     width: 150px;

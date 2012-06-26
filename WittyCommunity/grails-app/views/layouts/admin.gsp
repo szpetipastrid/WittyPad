@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -41,7 +43,7 @@
 
     <div style="padding-left: 50px;" class="adminTitle fixedTitle">
         <div class="title h" style="line-height: 70px;width: 150px;float:left;">
-            <g:link controller="admin" action="index" base="http://${mainDomain}">My Witties</g:link>
+            <g:link controller="admin" action="index" base="http://${mainDomain}"><g:message code="witty.plugin.my.witties"/></g:link>
         </div>
 
         <div><g:pageProperty name="page.title"/></div>
@@ -54,7 +56,7 @@
     <div class="push"></div>
 </div>
 <div class="footer">
-    &copy; 2012 wittypad.com | <a href="http://${mainDomain}">Witty Home</a> | <g:link controller="admin" action="index" base="http://${mainDomain}">My Witties</g:link>
+    &copy; 2012 wittypad.com | <a href="http://${mainDomain}"><g:message code="witty.plugin.witty.home"/></a> | <g:link controller="admin" action="index" base="http://${mainDomain}"><g:message code="witty.plugin.my.witties"/></g:link>
 </div>
 </body>
 </html>

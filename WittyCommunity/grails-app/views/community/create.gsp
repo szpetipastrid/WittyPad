@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -94,7 +96,7 @@
 
     function checkWittyAddress() {
         var text = $("#communityAddressField").val();
-        var url = "${createLink(controller:'community', action:'validate_property', params:[property:'address'])}&value=" + text;
+        var url = "${createLink(controller:'community', action:'validate_property', params:[property:'address'])}&value=" + encodeURIComponent(text);
         $("#communityAddressValidity").load(url);
     }
 
@@ -122,6 +124,7 @@
             closeCreateWittyWindow();
             reloadWittyList();
         } else {
+            %{-- TODO: Improve error message! --}%
             checkWittyAddress();
             checkWittyName();
             alert("Creation failed!\n\nPlease check the restrictions.");
