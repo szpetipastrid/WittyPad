@@ -1,50 +1,40 @@
-/* LayerSlider Styles */
+/* Common layer slider definitions */
+@import "layerslider-common.css";
 
-#layerslider {
-	width: 980px;
-	height: 500px;
-	margin: 0px auto 5px auto;
+/* Home LayerSlider Styles */
+.layerslider-home {
+    background: url('../images/home/slides/slide_bg.jpg');
+    width: 980px;
+    height: 400px;
+    margin: 0px auto 5px auto;
 }
 
-
-
-.ls-inner {
-	position: relative;
+.slide-title {
+    padding: 5px;
+    line-height: 65px;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 65px;
+    color: #ffffff;
+    left: 400px;
+    top: 50px;
+    text-shadow: 5px 5px 5px #424242;
+    easingin: easeOutQuad;
+    delayin: 700;
+    width: 530px;
 }
 
-.ls-inner,
-.ls-layer {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
-.ls-layer {
-	position: absolute;
-	display: none;
-	background-position: center center;
-}
-
-.ls-active,
-.ls-animating {
-	display: block !important;
-}
-
-.ls-layer > * {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.ls-layer .ls-bg {
-	left: 50%;
-	top: 50%;
-}
-
-.ls-nav {
-	text-align: center;
-}
-
-.ls-nav a {
-	display: inline-block;
+.slide-text {
+    left: 470px;
+    top: 185px;
+    easingin: easeOutQuad;
+    width: 430px;
+    height: 115px;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 45px;
+    line-height: 35px;
+    color: #efefef;
+    border-left: solid 5px #efefef;
+    padding-left: 30px;
+    text-shadow: 5px 5px 5px #424242;
+    text-align: left;
 }

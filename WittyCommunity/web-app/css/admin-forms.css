@@ -1,0 +1,116 @@
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
+.admin-form {
+    margin-top: 20px;
+}
+
+.admin-form div.key {
+    font-family: Arial;
+    clear: both;
+    width: 150px;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.admin-form div.value {
+    min-height: 30px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.admin-form .admin-divider {
+    clear: both;
+    max-width: 850px;
+    border-bottom: solid 1px #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.admin-form div.value input[type="text"] {
+    height: 30px;
+    border: solid 1px #2C85D6;
+    width: 380px;
+    padding-left: 10px;
+}
+
+.admin-form div.value .addressBackground {
+    background: url('../images/wittypad_caption.png') 270px 0 no-repeat;
+    width: 380px !important;
+    text-align: right;
+    padding-right: 120px;
+}
+
+.property_edit {
+    float: left;
+}
+
+.property_edit_text {
+    line-height: 30px;
+}
+
+.property_edit_textarea {
+    padding-top: 5px;
+}
+
+.inplace_field {
+    width: 380px;
+    float: left;
+    font-family: Arial;
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+.inplace_button {
+
+}
+
+.inplace_edit_button {
+    cursor: pointer;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+no-border {
+    border: none !important;
+}
+
+.profile-image-preview {
+    width: 256px;
+    height: 256px;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.196);
+    background: url('../images/default_profile.png');
+    border-radius: 20px;
+    float: left;
+    margin-bottom: 18px;
+}
+
+.profile-image-upload {
+    max-width: 700px;
+    margin-left: 300px;
+}
+
+.permissionValueContainer {
+}
+
+.permissionEditContainer {
+    line-height: 30px;
+    height: 30px;
+}
+
+.radioHolder {
+    float: left;
+}
+
+.radioValue {
+}

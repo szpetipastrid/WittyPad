@@ -1,3 +1,14 @@
+<!--
+  ~ Copyright (c) 2012. Witty Project.
+  ~ Peter Szilagyi
+  ~ szpetip@gmail.com
+  ~
+  ~ Witty is a a knowledge-management, open source community portal.
+  ~ Witty is available under the http://wittypad.com.
+  ~ Witty is a free software distributed under the GNU General Public Licence.
+  ~ Witty and WittyPad are the name of the software, please do not use it to other purposes.
+  -->
+
 <plugin name='witty-core' version='0.3.3' grailsVersion='1.3 &gt; *'>
   <author>Peter Szilagyi</author>
   <authorEmail>szpetip@gmail.com</authorEmail>
@@ -14,6 +25,8 @@ Witty Core features that required by other plugins.
     <resource>hu.kovex.witty.plugin.core.ShortenerTagLib</resource>
     <resource>hu.kovex.witty.plugin.core.jquery.ExtendedJQueryTagLib</resource>
     <resource>hu.kovex.witty.plugin.core.jquery.GoogleAnalyticsTagLib</resource>
+    <resource>hu.kovex.witty.plugin.core.ui.LayerSliderTagLib</resource>
+    <resource>hu.kovex.witty.plugin.core.ui.WittyFormTagLib</resource>
   </resources>
   <dependencies>
     <plugin name='mongodb' version='1.0.0.RC4' />

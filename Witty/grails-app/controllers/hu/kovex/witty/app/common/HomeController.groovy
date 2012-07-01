@@ -25,20 +25,20 @@ class HomeController {
             }
         } else {
             //Forward to home page
-                        switch (layout) {
-                            case 'd':
-                            case 'desktop':
-                                forward action: 'desktop'
-                                break
-                            case 'm':
-                            case 'mobile':
-                                forward action: 'mobile'
-                                break
-                            case 't':
-                            case 'tablet':
-                                forward action: 'tablet'
-                                break
-                        }
+            switch (layout) {
+                case 'd':
+                case 'desktop':
+                    redirect action: 'desktop'
+                    break
+                case 'm':
+                case 'mobile':
+                    redirect action: 'mobile'
+                    break
+                case 't':
+                case 'tablet':
+                    redirect action: 'tablet'
+                    break
+            }
         }
 
     }

@@ -2,14 +2,14 @@ WittyPad is a a free, open source knowledge-management community portal. WittyPa
 WittyPad developer blog is available under http://wittypadblog.blogspot.com.
 Follow WittyPad on twitter: @wittypad
 
- 1 Running Witty
- ===============
- Witty communities are working with sub domains, so to run witty in development mode, you should modify your host
- settings.
- Corresponding to grails.serverURL and grails.serverName properties in the Config.groovy you should add the following
- lines to your hosts file:
- 127.0.0.1              wittypad.local              #Witty home page, desktop layout
- 127.0.0.1				m.wittypad.local            #Witty home page, mobile layout
- 127.0.0.1				witty.wittypad.local        #Witty community, desktop layout
- 127.0.0.1				m.witty.wittypad.local      #Witty community, mobile layout
+1 Running Witty
+===============
+Witty communities are working with sub domains, so to run witty in development mode, you should modify your host
+settings.
+Corresponding to grails.serverURL and grails.serverName properties in the Config.groovy you should add the following
+lines to your hosts file:
+127.0.0.1           wittypad.local              #Witty home page, desktop layout
+127.0.0.1			m.wittypad.local            #Witty home page, mobile layout
+127.0.0.1			witty.wittypad.local        #Witty community, desktop layout
+127.0.0.1			m.witty.wittypad.local      #Witty community, mobile layout
 

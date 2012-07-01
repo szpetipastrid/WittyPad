@@ -1,3 +1,14 @@
+%{--
+  - Copyright (c) 2012. Witty Project.
+  - Peter Szilagyi
+  - szpetip@gmail.com
+  -
+  - Witty is a a knowledge-management, open source community portal.
+  - Witty is available under the http://wittypad.com.
+  - Witty is a free software distributed under the GNU General Public Licence.
+  - Witty and WittyPad are the name of the software, please do not use it to other purposes.
+  --}%
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -5,37 +16,25 @@
   Time: 8:24 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="hu.kovex.witty.plugin.core.domain.WInstance" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>Witty | <sh:winstance obj="${community}" val="prop_name"/></title>
+    <title>Witty | <sh:winstance obj="${witty}" val="prop_name"/></title>
 
-    <g:each in="${community.wproperties.findAll {it.key.startsWith('html_css')}*.key}">
-        <link rel="stylesheet" href="${sh.winstance(obj:community,val:it)}" type="text/css" media="screen">
+    <g:each in="${witty.wproperties.findAll {it.key.startsWith('html_css')}*.key}">
+        <link rel="stylesheet" href="${sh.winstance(obj: witty, val: it)}" type="text/css" media="screen">
     </g:each>
-    <g:each in="${community.wproperties.findAll {it.key.startsWith('html_script')}*.key}">
-        <script type="text/javascript" src="${sh.winstance(obj:community,val:it)}"></script>
+    <g:each in="${witty.wproperties.findAll {it.key.startsWith('html_script')}*.key}">
+        <script type="text/javascript" src="${sh.winstance(obj: witty, val: it)}"></script>
     </g:each>
 </head>
-<script type="text/javascript">
-    $(function() {
-        location.hash = 'home';
-    })
-</script>
 
-
-<div class="community-content">
-    <h1>${sh.winstance(obj:community,val:'prop_name')} (${selectedShortLang}, <g:formatDate date="${new Date()}" type="datetime" style="MEDIUM"/>)</h1>
-    <comm:image community="${sh.winstance(obj:community,val:'prop_uri')}" size="small"/>
+<div class="witty-content">
+    <h1>${sh.winstance(obj: witty, val: 'prop_name')} (${selectedShortLang})</h1>
 
     <p>
-        ${sh.winstance(obj:community,val:'prop_description')}
-    </p>
-    <comm:image community="${sh.winstance(obj:community,val:'prop_uri')}" size="large"/>
-
-    <p>
-        <g:link base="${org.codehaus.groovy.grails.commons.ConfigurationHolder.config.grails.serverURL}"
-                uri="/">Witty Home</g:link>
+        Witty is created: ${formatDate(date:WInstance.prop(witty, "prop_created", "all"), style:"short")}<br>
+        ${sh.winstance(obj: witty, val: 'prop_description')}
     </p>
 </div>
 </html>

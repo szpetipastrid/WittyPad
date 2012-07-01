@@ -42,3 +42,6 @@
 #mongodb
 /mongodb/dbase
 /mongodb/.dbshell
+
+#workspace
+.idea/workspace.xml

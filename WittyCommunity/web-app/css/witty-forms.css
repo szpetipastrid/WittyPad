@@ -1,0 +1,90 @@
+/*
+ * Copyright (c) 2012. Witty Project.
+ * Peter Szilagyi
+ * szpetip@gmail.com
+ *
+ * Witty is a a knowledge-management, open source community portal.
+ * Witty is available under the http://wittypad.com.
+ * Witty is a free software distributed under the GNU General Public Licence.
+ * Witty and WittyPad are the name of the software, please do not use it to other purposes.
+ */
+
+/* Text Color */
+.t {
+    color: #222;
+}
+
+/* Highlight color */
+.h {
+    color: #2C85D6 !important;
+}
+
+a.t, .t a {
+    color: #222 !important;
+    cursor: pointer;
+}
+
+a.t:hover, .t a:hover {
+    color: #2C85D6 !important;
+}
+
+a.h, .h a {
+    color: #2C85D6 !important;
+}
+
+a.h:hover, .h a:hover {
+    color: #2C85D6 !important;
+}
+
+.l {
+    border: solid 1px #cccccc;
+    background: #F2F5FC;
+    color: #222;
+}
+
+.sl {
+    background: #F2F5FC;
+}
+
+a.nbutton, .nbutton a, button.nbutton, submit.nbutton, .nbutton button, .nbutton submit, nbutton input[type=submit], input.nbutton {
+    border: solid 1px #2C85D6;
+    background-image: linear-gradient(bottom, #66C0FD, #3D8FFB);
+    background-image: -o-linear-gradient(bottom, #66C0FD, #3D8FFB);
+    background-image: -moz-linear-gradient(bottom, #66C0FD, #3D8FFB);
+    background-image: -webkit-linear-gradient(bottom, #66C0FD, #3D8FFB);
+    background-image: -ms-linear-gradient(bottom, #66C0FD, #3D8FFB);
+    color: #ffffff !important;
+}
+
+a.dbutton, .dbutton a, button.dbutton, submit.dbutton, .dbutton button, .dbutton submit, dbutton input[type=submit], input.dbutton {
+    width: 80px !important;
+    text-align: center !important;
+}
+
+a.nbutton:hover, .nbutton a:hover, button.nbutton:hover, submit.nbutton:hover, .nbutton button:hover, .nbutton submit:hover {
+    background: #2AB5E8;
+}
+
+a.sbutton, .sbutton a, button.sbutton, submit.sbutton, .sbutton button, .sbutton submit {
+    border: solid 1px #cccccc;
+    background: #f9f9f9;
+    color: #7d7d7d;
+}
+
+a.sbutton:hover, .sbutton a:hover, button.sbutton:hover, submit.sbutton:hover, .sbutton button:hover, .sbutton submit:hover {
+    background: #dddddd;
+}
+
+a {
+    color: #2C85D6;
+}
+
+.hbg {
+    border-radius: 5px;
+    background: #f9f9f9;
+    border-bottom: dashed 1px #CCCCCC;
+}
+
+.f {
+    border: solid 1px #2C85D6;
+}
