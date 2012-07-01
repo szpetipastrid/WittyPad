@@ -13,6 +13,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -27,7 +29,9 @@
     <title><g:message code="witty.plugin.community.admin.dashboard.title"/></title>
     <jqe:jQueryResources/>
 </head>
-
+ <content tag="title">
+    <div class="title t" style="line-height: 70px;float:left;">Account Home</div>
+</content>
 <body>
 <div style="width: 100%;">
     <div id="wittyList"></div>

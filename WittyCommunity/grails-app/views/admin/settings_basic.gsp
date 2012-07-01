@@ -13,6 +13,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -57,8 +59,8 @@
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.address"/></div>
 
-        <div class="value" style="margin-left: 200px;">
-            <div class="l" style="width: 500px;line-height: 30px;">
+        <div class="value" style="margin-left: 150px;">
+            <div style="line-height: 30px;">
                 ${fullDomain} (<g:message code="witty.plugin.community.create.witty.publishing.cannot.be.modified"/>)
             </div>
         </div>
@@ -69,7 +71,7 @@
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.profile.image"/></div>
 
-        <div class="value" style="margin-left: 200px;">
+        <div class="value" style="margin-left: 150px;">
             <div id="profileImagePreview" class="profile-image-preview">
                 <img src="${resource(dir: "images", file: "icon-reflection_256.png")}"
                      style="border-radius: 15px 15px 0 0">
@@ -112,7 +114,7 @@
 
         <div class="key"><g:message code="witty.plugin.community.create.witty.profile.image"/></div>
 
-        <div class="value" style="margin-left: 200px;">
+        <div class="value" style="margin-left: 150px;">
             <div>
                 <div id="permissionValueContainer"><span id="permissionValueSpan">Public</span> <a
                         id="editPermissionValue"

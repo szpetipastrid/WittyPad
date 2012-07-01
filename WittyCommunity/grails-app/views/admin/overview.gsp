@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -27,14 +29,42 @@
 
 </head>
 <content tag="content">
-    <div class="title">Overview</div>
-    This is overview
-    <g:if test="${WInstance.prop(witty, 'prop_status','all') == 'new'}">
-        <br>
-        <b>This is a new Witty</b>, your Witty doesn't have any application. Your Witty won't be offered to other peoples or displayed on the wittypad main screen.
 
-        <div class="wittyStatusDiv">
+    <div style="max-width: 850px;">
+        <div style="width: 250px;min-height:256px;float:right; ">
+
+            <div class="l overviewRightSide">
+                <img src="${resource(dir: "images", file: "overview_ratings.png")}"/>
+            </div>
+
+            <div class="l overviewRightSide">
+                <h2>Overview</h2>
+                Visible to others: no<br>
+                Completed profile: yes<br>
+                Template set: no<br>
+
+
+            </div>
+
+
+            <div class="l overviewRightSide">
+                <h2>Activities</h2>
+                No activity available!
+            </div>
 
         </div>
-    </g:if>
+
+        <div class="overviewContent"
+             style="display:block; max-width: 580px;position: absolute;padding-right: 20px;">
+            <h2><g:message code="witty.plugin.admin.dashboard.overview"/></h2>
+
+            This is overview
+            <g:if test="${WInstance.prop(witty, 'prop_status','all') == 'new'}">
+                <br>
+                <b>This is a new Witty</b>, your Witty doesn't have any application. Your Witty won't be offered to other peoples or displayed on the wittypad main screen.
+
+            </g:if>
+        </div>
+
+    </div>
 </content>

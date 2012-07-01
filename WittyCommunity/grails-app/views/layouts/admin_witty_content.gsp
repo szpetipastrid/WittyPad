@@ -11,6 +11,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -29,6 +31,6 @@
 <div style="float:right;width: 50px;">
 </div>
 
-<div style="margin-left: 205px;margin-right: 50px;display: block;">
+<div style="margin-left: 200px;margin-right: 50px;display: block;">
     <g:pageProperty name="page.content"/>
 </div>

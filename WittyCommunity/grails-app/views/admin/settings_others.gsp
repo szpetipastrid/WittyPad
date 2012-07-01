@@ -13,6 +13,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -58,7 +60,7 @@
 
             <div class="key"><g:message code="witty.plugin.community.activate.text"/></div>
 
-            <div class="value" style="margin-left: 200px;">
+            <div class="value" style="margin-left: 150px;">
                 <a id="activateWittyButton" class="button nbutton dbutton"><g:message code="witty.plugin.community.button.activate"/></a>
             </div>
             <script type="text/javascript">

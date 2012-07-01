@@ -13,6 +13,8 @@
 
 
 
+
+
 <%--
   Created by IntelliJ IDEA.
   User: szpetip
@@ -26,7 +28,7 @@
 <content tag="title">
     <div class="title t" style="line-height: 70px;float:left;"><sh:winstance obj="${witty}" val="prop_name"/> -</div>
 
-    <div id="adminSubtitle" class="title h" style="padding-left:10px;line-height: 70px;"></div>
+    <div id="adminSubtitle" class="title h" style="margin-left:10px;line-height: 70px;"></div>
 </content>
 
 <body>
@@ -38,18 +40,32 @@
         setAdminSubTitle("${message(code:'witty.plugin.admin.dashboard.menu.overview')}");
         $("#wittyAdminContent").load('${createLink(controller:"admin", action:"overview")}');
         window.location.hash = "overview";
+        setMenuButtons("overviewButton");
+
     }
 
     function showBasicSettings() {
         setAdminSubTitle("${message(code:'witty.plugin.admin.dashboard.menu.settings')}");
         $("#wittyAdminContent").load('${createLink(controller:"admin", action:"settings_basic")}');
         window.location.hash = "settings";
+        setMenuButtons("settingsButton");
     }
 
     function showOthersSettings() {
         setAdminSubTitle("${message(code:'witty.plugin.admin.dashboard.menu.others')}");
         $("#wittyAdminContent").load('${createLink(controller:"admin", action:"settings_others")}');
         window.location.hash = "others";
+        setMenuButtons("othersButton");
+    }
+
+    function setMenuButtons(activeId) {
+        $("#overviewButton").removeClass("adminMenuActive").removeClass("nbutton").addClass("adminMenuInactive").addClass("t");
+        $("#settingsButton").removeClass("adminMenuActive").removeClass("nbutton").addClass("adminMenuInactive").addClass("t");
+        $("#othersButton").removeClass("adminMenuActive").removeClass("nbutton").addClass("adminMenuInactive").addClass("t");
+
+        $("#" + activeId).removeClass("t").removeClass("adminMenuInactive").addClass("adminMenuActive").addClass("nbutton");
+
+
     }
 
     $(function() {
@@ -77,17 +93,17 @@
     });
     function setAdminSubTitle(subTitle) {
         document.title = "${sh.winstance(obj:witty,val:'prop_name')} ${message(code:'witty.plugin.admin.dashboard.window.title')} - " + subTitle;
-        $("#adminSubtitle").text(subTitle);
+        $("#adminSubtitle").html("&nbsp;" + subTitle);
     }
 
 
 </script>
 
 <div class="adminMenu">
-    <a id="overviewButton" class="overview t">${message(code:'witty.plugin.admin.dashboard.menu.overview')}</a>
-    <a id="layoutButton" class="layout t">${message(code:'witty.plugin.admin.dashboard.menu.layout')}</a>
-    <a id="settingsButton" class="settings t">${message(code:'witty.plugin.admin.dashboard.menu.settings')}</a>
-    <a id="othersButton" class="settings t">${message(code:'witty.plugin.admin.dashboard.menu.others')}</a>
+    <a id="overviewButton">${message(code: 'witty.plugin.admin.dashboard.menu.overview')}</a>
+    %{--<a id="layoutButton">${message(code: 'witty.plugin.admin.dashboard.menu.layout')}</a>--}%
+    <a id="settingsButton">${message(code: 'witty.plugin.admin.dashboard.menu.settings')}</a>
+    <a id="othersButton">${message(code: 'witty.plugin.admin.dashboard.menu.others')}</a>
 </div>
 
 <div id="wittyAdminContent" class="wittyAdminContent"></div>
